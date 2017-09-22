@@ -36,7 +36,7 @@ p {
 }
 
 .header-top-right-corner-txt{
-    font size: 1em;
+    font-size: 1em;
     text-align: right;
     padding: .5em;
 }
@@ -48,6 +48,7 @@ p {
 .progressbar{
     font-size: 1em;
     padding: .5em;
+    text-align: center;
     display: flex;
     justify-content: space-around;
 }
@@ -56,8 +57,18 @@ p {
     padding: 0 1em;
 }
 
+.progressbar-bar {
+    width: 25em;
+    position: absolute;
+    border: 1px solid #6190e8;
+    border-radius: 25px;
+    background: #6190e8;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
 .progress-bar {
-    color: #337ab7;
+    color: #000000;
     background-color: #fff;
+    border-radius: 25px;
     box-shadow: none;
 }
