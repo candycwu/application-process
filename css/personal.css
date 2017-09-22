@@ -13,7 +13,51 @@ p {
 }
 
 .jumbo-wrapper {
-    background: #1c92d2;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to top, #f2fcfe, #1c92d2);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to top, #f2fcfe, #1c92d2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: 80%;
+    background: #6190e8;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #f2fcfe, #6190e8);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #f2fcfe, #6190e8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+/* ---------------------------------------------------
+    MAIN HEADER STYLE
+----------------------------------------------------- */
+
+.header-container {
+    margin: 0 5em;
+    color: white;
+}
+
+.header-left-top-cornerlogo {
+    position: fixed;
+    padding: .5em;
+    left: 10em;
+    transform: translate(-50%, 0);
+}
+
+.header-top-right-corner-txt{
+    font size: 1em;
+    text-align: right;
+    padding: .5em;
+}
+
+/* ---------------------------------------------------
+    MAIN HEADER STYLE - PROGRESS BAR
+----------------------------------------------------- */
+
+.progressbar{
+    font-size: 1em;
+    padding: .5em;
+    display: flex;
+    justify-content: space-around;
+}
+
+.progressbar span {
+    padding: 0 1em;
+}
+
+.progress-bar {
+    color: #337ab7;
+    background-color: #fff;
+    box-shadow: none;
 }
