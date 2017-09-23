@@ -72,3 +72,26 @@ p {
     border-radius: 25px;
     box-shadow: none;
 }
+
+/* ---------------------------------------------------
+    LEFT CARD STYLE
+----------------------------------------------------- */
+.bodycardcontainer {
+    margin: 0 5em;
+}
+
+.leftsidecard {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.card-header {
+    border: solid #6190e8;
+    background: #6190e8;
+    color: white;
+}
+.card-body {
+    width: 50%;
+}
