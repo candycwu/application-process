@@ -110,12 +110,18 @@ p {
     LEFT CARD STYLE
 ----------------------------------------------------- */
 
-.leftside {
-    position: absolute;
-    width: 30%;
-    padding: 1em 1em 1em 2em;
-    display: block;
-    background: rgba(255,255,255,0.5);
+@media screen and (min-width: 320px) and (max-width: 768px) {
+    .leftside { display: none; }
+  }
+
+@media (min-width: 769px) {
+    .leftside {
+        position: absolute;
+        width: 30%;
+        padding: 1em 1em 1em 2em;
+        display: block;
+        background: rgba(255,255,255,0.5);
+    }
 }
 
 .leftside p {
@@ -132,18 +138,28 @@ p {
 /* ---------------------------------------------------
     RIGHT CARD STYLE
 ----------------------------------------------------- */
+@media (max-width: 768px) {
+    .rightside {
+        width: 100%;
+        float: left;
+        }
+    }
 
-.rightside {
-    position: absolute;
-    right: 0px;
-    width: 70%;
-    display: block;
-}
+@media (min-width: 769px) {
+    .rightside {
+        position: absolute;
+        right: 0px;
+        width: 70%;
+        display: block;
+        }
+    }
 
 .rightside h2 {
     color: #0d5885;
     font-size: 2.8em;
     padding-bottom: 1em;
+    padding-right: 10%;
+    padding-left: 10%;
 }
 
 .form-row {
@@ -171,5 +187,5 @@ p {
 .submitbtn {
     position: absolute;
     right: 10%;
-    padding-top: 10%;
+    padding-top: 5%;
 }
