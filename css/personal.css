@@ -143,6 +143,7 @@ p {
 .rightside h2 {
     color: #0d5885;
     font-size: 2.8em;
+    padding-bottom: 1em;
 }
 
 .form-row {
@@ -166,3 +167,9 @@ p {
 /* ---------------------------------------------------
     BUTTON STYLE
 ----------------------------------------------------- */
+
+.submitbtn {
+    position: absolute;
+    right: 10%;
+    padding-top: 10%;
+}
