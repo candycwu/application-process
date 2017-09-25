@@ -216,6 +216,9 @@ p {
 /* ---------------------------------------------------
     CARD STYLE
 ----------------------------------------------------- */
+/* ---------------------
+   Tablet 768px+ Screen 
+------------------------ */
 @media (min-width: 768px) {
     .bodycardcontainer {
         padding-left: 15px;
@@ -253,12 +256,18 @@ p {
     }
 }
 
+/* ---------------------
+   Hide Info Icon 
+------------------------ */
 @media (min-width: 769px) {    
     .card-header span {
         display: none;
     }
 }
 
+/* ---------------------
+   Mobile L 425 Screen 
+------------------------ */
 @media (max-width: 425px) {
     .bodycardcontainer {
         padding-left: 15px;
@@ -298,11 +307,9 @@ p {
 /* ---------------------------------------------------
     LEFT CARD STYLE
 ----------------------------------------------------- */
-
-@media screen and (min-width: 320px) and (max-width: 768px) {
-    .leftside { display: none; }
-  }
-
+/* ---------------------
+   Tablet 768px+ Screen 
+------------------------ */
 @media (min-width: 769px) {
     .leftside {
         position: absolute;
@@ -312,6 +319,12 @@ p {
         background: rgba(255,255,255,0.5);
     }
 }
+
+@media (max-width: 768px) {
+    .leftside { display: none; }
+  }
+
+
 
 .leftside p {
     line-height: 1.5em;
