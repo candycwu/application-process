@@ -43,6 +43,10 @@ p {
     padding: .5em;
 }
 
+.header-top-right-corner-txt a {
+    color: white;
+}
+
 /* ---------------------------------------------------
     MAIN HEADER STYLE - PROGRESS BAR
 ----------------------------------------------------- */
