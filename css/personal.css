@@ -225,6 +225,7 @@ p {
         padding-right: 15px;
         margin-right: auto;
         margin-left: auto;
+        padding-top: 1em;
     }
 
     .card-body {
@@ -282,7 +283,7 @@ p {
 
     .maincard {
         background: rgba(255,255,255,0.9);
-        padding-bottom: 30em;
+        padding-bottom: 33em;
         margin-right: auto;
         margin-left: auto;
         box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.5);
@@ -308,7 +309,7 @@ p {
     LEFT CARD STYLE
 ----------------------------------------------------- */
 /* ---------------------
-   Tablet 768px+ Screen 
+   Laptop 769px+ Screen 
 ------------------------ */
 @media (min-width: 769px) {
     .leftside {
@@ -329,17 +330,43 @@ p {
     .leftside img {
         width: 13.625em;
     }
+
+    .hidden769 {
+        display: none;
+    }
 }
 
+/* ---------------------
+   Tablet 768px Screen 
+------------------------ */
 @media (max-width: 768px) {
     .leftside { display: none; }
+
+    .hidden769 {
+        padding: 1.5em 1em .875em;
+        background: #EDEEEE;
+        margin-top: -1.37%;
   }
+}
+
+/* ---------------------
+   Tablet 425px Screen 
+------------------------ */
+@media (max-width: 425px) {
+    .leftside { display: none; }
+
+    .hidden769 {
+        padding: 1.5em 1em .875em;
+        background: #EDEEEE;
+        margin-top: -2.47%;
+  }
+}
 
 /* ---------------------------------------------------
     RIGHT CARD STYLE
 ----------------------------------------------------- */
 /* ---------------------
-   Tablet 768px+ Screen 
+   Tablet 769px+ Screen 
 ------------------------ */
 @media (min-width: 769px) {
     .rightside {
@@ -363,7 +390,7 @@ p {
         font-weight: 500;
     }
 
-    #click_advance i {
+    .fa-plus{
         display: none;
     }
 
@@ -473,12 +500,12 @@ p {
     }
 
     .form-row {
-        padding-bottom: 1em;
+        padding-bottom: .3em;
     }
     
     .col-wider {
         display: inline-block;
-        width: 55%;
+        width: 96%;
     }
 
     .mailingAdd{
@@ -493,6 +520,14 @@ p {
     .col-narrow {
         display: inline-block;
         width: 20%;
+    }
+
+    .state {
+        width: 25%;
+    }
+
+    .zipcode {
+        width: 70%;
     }
         
 }

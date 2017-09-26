@@ -47,7 +47,7 @@
     </div>
         <div class="bodycardcontainer">
             <div class="maincard">
-                <h4 class="card-header">MK Unlimited<span><i class="fa fa-info-circle" aria-hidden="true"></i></span></h4>
+                <h4 class="card-header">MK Unlimited<span id="clickmoreinfo"><i class="fa fa-info-circle" aria-hidden="true"></i></span></h4>
                 <!-- Leftside Card -->
                 <div class="card-body">
                         <div class="container-fluid">
@@ -58,6 +58,12 @@
                                 <p class="card-text">No annual fee.</p>
                                 <a href="#">Pricing & Terms</a>
                             </div>
+                        </div>
+                        <div class="container-fluide hidden769">
+                            <p>Unlimited 1.5% cashback on every purchase - it's automatic.</p>
+                            <p>Redeem for cash back - any amount, anytime.</p>
+                            <p>No annual fee.</p>
+                            <a href="#">Pricing & Terms</a>
                         </div>
                     <!-- Rightside Card - Form -->
                         <div class="rightside">
@@ -118,7 +124,7 @@
                                             <label for="city">City</label>
                                             <input type="text" class="form-control is-valid" id="city" placeholder="City" required>
                                         </div>
-                                        <div class="col-narrow">
+                                        <div class="col-narrow state">
                                             <label for="inputState">State</label>
                                             <select id="inputState" class="form-control">
                                                 <option selected> </option>
@@ -175,7 +181,7 @@
                                                 <option value="WY">WY</option>
                                             </select>
                                         </div>
-                                            <div class="col-wide">
+                                            <div class="col-wide zipcode">
                                                 <label for="inputZip">ZIP Code</label>
                                                 <input type="text" class="form-control is-valid" id="inputZip" onkeypress="validate(event)" placeholder="Zip Code" maxlength="5" required>
                                             </div>
@@ -221,6 +227,13 @@
         <script>
         $('#click_advance').click(function() {
             $('.display_advance').toggle('1000');
+        });
+        </script>
+
+        <!-- Toggle + div -->
+        <script>
+        $('#clickmoreinfo').click(function() {
+            $('.hidden769').toggle('1000');
         });
         </script>
 </body>
