@@ -318,35 +318,29 @@ p {
         display: block;
         background: rgba(255,255,255,0.5);
     }
+
+    .leftside p {
+        line-height: 1.5em;
+        text-align: left;
+        padding-bottom: .65em;
+        font-size: .875em;
+    }
+
+    .leftside img {
+        width: 13.625em;
+    }
 }
 
 @media (max-width: 768px) {
     .leftside { display: none; }
   }
 
-
-
-.leftside p {
-    line-height: 1.5em;
-    text-align: left;
-    padding-bottom: .65em;
-    font-size: .875em;
-}
-
-.leftside img {
-    width: 13.625em;
-}
-
 /* ---------------------------------------------------
     RIGHT CARD STYLE
 ----------------------------------------------------- */
-@media (max-width: 768px) {
-    .rightside {
-        width: 100%;
-        float: left;
-        }
-    }
-
+/* ---------------------
+   Tablet 768px+ Screen 
+------------------------ */
 @media (min-width: 769px) {
     .rightside {
         position: absolute;
@@ -354,33 +348,108 @@ p {
         width: 70%;
         display: block;
         }
+
+    .rightside h2 {
+        color: #0d5885;
+        font-size: 2.8em;
+        padding-bottom: 1em;
+        padding-right: 10%;
+        padding-left: 10%;
     }
 
-.rightside h2 {
-    color: #0d5885;
-    font-size: 2.8em;
-    padding-bottom: 1em;
-    padding-right: 10%;
-    padding-left: 10%;
+    .form-row {
+        padding-bottom: 1em;
+    }
+    
+    .col-wider {
+        display: inline-block;
+        width: 45.6%;
+    }
+    .col-wide {
+        display: inline-block;
+        width: 35%;
+    }
+    
+    .col-narrow {
+        display: inline-block;
+        width: 10%;
+    }
+        
 }
 
-.form-row {
-    padding-bottom: 1em;
+/* ---------------------
+   Tablet 768px- Screen 
+------------------------ */
+@media (max-width: 768px) {
+    .rightside {
+        width: 100%;
+        float: left;
+        }
+
+    .rightside h2 {
+        color: #0d5885;
+        font-size: 2.8em;
+        padding-bottom: 1em;
+        padding-right: 10%;
+        padding-left: 10%;
+    }
+
+    .form-row {
+        padding-bottom: 1em;
+    }
+    
+    .col-wider {
+        display: inline-block;
+        width: 45.6%;
+    }
+    .col-wide {
+        display: inline-block;
+        width: 35%;
+    }
+    
+    .col-narrow {
+        display: inline-block;
+        width: 10%;
+    }
+    }
+
+/* ---------------------
+   Mobile L 425 Screen 
+------------------------ */
+@media (max-width: 425px) {
+    .rightside {
+        width: 100%;
+        float: left;
+        }
+
+    .rightside h2 {
+        color: #0d5885;
+        font-size: 2.8em;
+        padding-bottom: 1em;
+        padding-right: 10%;
+        padding-left: 10%;
+    }
+
+    .form-row {
+        padding-bottom: 1em;
+    }
+    
+    .col-wider {
+        display: inline-block;
+        width: 45.6%;
+    }
+    .col-wide {
+        display: inline-block;
+        width: 35%;
+    }
+    
+    .col-narrow {
+        display: inline-block;
+        width: 10%;
+    }
+        
 }
 
-.col-wider {
-    display: inline-block;
-    width: 45.6%;
-}
-.col-wide {
-    display: inline-block;
-    width: 35%;
-}
-
-.col-narrow {
-    display: inline-block;
-    width: 10%;
-}
 
 /* ---------------------------------------------------
     BUTTON STYLE
