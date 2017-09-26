@@ -223,9 +223,49 @@ hr.style1{
     CARD STYLE
 ----------------------------------------------------- */
 /* ---------------------
-   Tablet 768px+ Screen 
+   Hide Info Icon 769px+
 ------------------------ */
-@media (min-width: 768px) {
+@media (min-width: 769px) {    
+    .card-header span {
+        display: none;
+    }
+    .bodycardcontainer {
+        padding-left: 10%;
+        padding-right: 10%;
+        margin-right: auto;
+        margin-left: auto;
+        padding-top: 1em;
+    }
+
+    .card-body {
+        position: relative;
+    }
+
+    .maincard {
+        background: rgba(255,255,255,0.9);
+        padding-bottom: 30em;
+        margin-right: auto;
+        margin-left: auto;
+        box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.5);
+        border-radius: 4px 4px 4px 4px;
+    }
+
+    .card-header {
+        font-size: 1.5em;
+        padding: 0.2em 0.55em;
+        border-radius: 4px 4px 0px 0px;
+        border: solid #133F91;
+        background: #133F91;
+        color: white;
+        font-weight: bold;
+        letter-spacing: 1px;
+    } 
+}
+
+/* ---------------------
+   Tablet 768px Screen 
+------------------------ */
+@media (min-width: 768px) and (max-width: 768px) {
     .bodycardcontainer {
         padding-left: 15px;
         padding-right: 15px;
@@ -264,15 +304,6 @@ hr.style1{
 }
 
 /* ---------------------
-   Hide Info Icon 
------------------------- */
-@media (min-width: 769px) {    
-    .card-header span {
-        display: none;
-    }
-}
-
-/* ---------------------
    Mobile L 425 Screen 
 ------------------------ */
 @media (max-width: 425px) {
@@ -289,7 +320,7 @@ hr.style1{
 
     .maincard {
         background: rgba(255,255,255,0.9);
-        padding-bottom: 33em;
+        padding-bottom: 35em;
         margin-right: auto;
         margin-left: auto;
         box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.5);
@@ -387,7 +418,7 @@ hr.style1{
         color: #0d5885;
         font-size: 2.8em;
         margin-bottom: 23px;
-        margin-top: 50px;
+        margin-top: 10px;
         letter-spacing: 3px;
         text-align: center;
     }

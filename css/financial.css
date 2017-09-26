@@ -1,0 +1,570 @@
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+
+body {
+    font-family: 'Poppins', sans-serif;
+    }
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1em;
+    font-weight: 300;
+    line-height: 1.7em;
+    color: #666;
+}
+
+.jumbo-wrapper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #6190e8;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #f2fcfe, #6190e8);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #f2fcfe, #6190e8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+hr.style1{
+    margin-top: 10px;
+    margin-bottom: 5px;
+	border-top: 1px solid #8c8b8b;
+    }
+
+/* ---------------------------------------------------
+    MAIN HEADER STYLE
+----------------------------------------------------- */
+/* ---------------------
+   Tablet 768px+ Screen 
+------------------------ */
+@media (min-width: 768px) {
+    .header-container {
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-right: auto;
+        margin-left: auto;
+        color: white;
+    }
+
+    .header-left-top-cornerlogo {
+        position: fixed;
+        left: 5%;
+        transform: translate(-50%, 0);
+        padding-top: 15px;
+    }
+
+    .header-top-right-corner-txt{
+        font-size: 1em;
+        text-align: right;
+        padding: .5em;
+    }
+
+    .header-top-right-corner-txt a {
+        color: white;
+        font-size: 12px;
+    }
+}
+
+/* ---------------------
+   Mobile L 425 Screen 
+------------------------ */
+@media (max-width: 425px) {
+    .header-container {
+        margin: 0 2em;
+        color: white;
+    }
+
+    .header-left-top-cornerlogo {
+        position: fixed;
+        left: 10%;
+        transform: translate(-50%, 0);
+        padding-top: 10px;
+    }
+
+    .header-top-right-corner-txt i { 
+        float: right;
+        padding-top: 10px;
+    }
+
+    .header-top-right-corner-txt span { 
+        display: none; 
+    }
+}
+
+/* ---------------------
+   Mobile M 375px Screen 
+------------------------ */
+@media (max-width: 375px) {
+    .header-container {
+        margin: 0 1em;
+        color: white;
+    }
+
+    .header-left-top-cornerlogo {
+        position: fixed;
+        left: 10%;
+        transform: translate(-50%, 0);
+        padding-top: 10px;
+        padding-right: 20px;
+    }
+
+    .header-top-right-corner-txt i { 
+        float: right;
+        padding-top: 10px;
+    }
+
+    .header-top-right-corner-txt span { 
+        display: none; 
+    }
+}
+
+/* ---------------------------------------------------
+    MAIN HEADER STYLE - PROGRESS BAR
+----------------------------------------------------- */
+/* ---------------------
+   Tablet 768px+ Screen 
+------------------------ */
+@media (min-width: 768px) {
+    .progresstitles {
+        font-size: 1em;
+        padding: .5em;
+        text-align: center;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .progressbar span {
+        padding: 0 1em;
+    }
+
+    .progressbar{
+        font-size: 1em;
+        padding: .5em;
+        text-align: center;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .progressbar-bar {
+        width: 25em;
+        position: absolute;
+        border: 1px solid #6190e8;
+        border-radius: 25px;
+        background: #6190e8;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+
+    .progress-bar {
+        color: #000000;
+        background-color: #fff;
+        border-radius: 25px;
+        box-shadow: none;
+    }
+}
+
+/* ---------------------
+   Mobile L 425 Screen 
+------------------------ */
+@media (max-width: 425px) {
+    .progresstitles {
+        font-size: .85em;
+        padding: 5em 2em .5em 2em;
+        text-align: center;
+        display: flex;
+        justify-content: space-around;  
+    }
+
+    .progressbar-bar {
+        width: 70%;
+        position: absolute;
+        border: 1px solid #6190e8;
+        border-radius: 25px;
+        background: #6190e8;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+
+    .progress-bar {
+        color: #000000;
+        background-color: #fff;
+        border-radius: 25px;
+        box-shadow: none;
+    }
+}
+
+/* ---------------------
+   Mobile M 375px Screen 
+------------------------ */
+@media (max-width: 375px) {
+    .progresstitles {
+        font-size: .75em;
+        padding: 5em 2.3em .5em 2.3em;
+        text-align: center;
+        display: flex;
+        justify-content: space-around;  
+
+    }
+
+    .progressbar-bar {
+        width: 70%;
+        position: absolute;
+        border: 1px solid #6190e8;
+        border-radius: 25px;
+        background: #6190e8;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+
+    .progress-bar {
+        color: #000000;
+        background-color: #fff;
+        border-radius: 25px;
+        box-shadow: none;
+    }
+}
+/* ---------------------------------------------------
+    CARD STYLE
+----------------------------------------------------- */
+/* ---------------------
+   Hide Info Icon 769px+
+------------------------ */
+@media (min-width: 769px) {    
+    .card-header span {
+        display: none;
+    }
+}
+
+/* ---------------------
+   Tablet 768px Screen 
+------------------------ */
+@media (min-width: 768px) {
+    .bodycardcontainer {
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-right: auto;
+        margin-left: auto;
+        padding-top: 1em;
+    }
+
+    .card-body {
+        position: relative;
+    }
+
+    .maincard {
+        background: rgba(255,255,255,0.9);
+        padding-bottom: 30em;
+        margin-right: auto;
+        margin-left: auto;
+        box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.5);
+        border-radius: 4px 4px 4px 4px;
+    }
+
+    .card-header {
+        font-size: 1.5em;
+        padding: 0.2em 0.55em;
+        border-radius: 4px 4px 0px 0px;
+        border: solid #133F91;
+        background: #133F91;
+        color: white;
+        font-weight: bold;
+        letter-spacing: 1px;
+    } 
+
+    .card-header span {
+        float: right;
+    }
+}
+
+/* ---------------------
+   Mobile L 425 Screen 
+------------------------ */
+@media (max-width: 425px) {
+    .bodycardcontainer {
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .card-body {
+        position: relative;
+    }
+
+    .maincard {
+        background: rgba(255,255,255,0.9);
+        padding-bottom: 35em;
+        margin-right: auto;
+        margin-left: auto;
+        box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.5);
+        border-radius: 4px 4px 4px 4px;
+    }
+
+    .card-header {
+        font-size: 1em;
+        padding: 0.67em;
+        border-radius: 4px 4px 0px 0px;
+        border: solid #133F91;
+        background: #133F91;
+        color: white;
+        font-weight: bold;
+        letter-spacing: 1px;
+    }
+    
+    .card-header span {
+        float: right;
+    }
+}
+/* ---------------------------------------------------
+    LEFT CARD STYLE
+----------------------------------------------------- */
+/* ---------------------
+   Laptop 769px+ Screen 
+------------------------ */
+@media (min-width: 769px) {
+    .leftside {
+        position: absolute;
+        width: 30%;
+        padding: 1em 1em 1em 2em;
+        display: block;
+        background: rgba(255,255,255,0.5);
+    }
+
+    .leftside p {
+        line-height: 1.5em;
+        text-align: left;
+        padding-bottom: .65em;
+        font-size: .875em;
+    }
+
+    .leftside img {
+        width: 13.625em;
+    }
+
+    .hidden769 {
+        display: none;
+    }
+}
+
+/* ---------------------
+   Tablet 768px Screen 
+------------------------ */
+@media (max-width: 768px) {
+    .leftside { display: none; }
+
+    .hidden769 {
+        padding: 1.5em 1em .875em;
+        background: #EDEEEE;
+        margin-top: -1.37%;
+  }
+}
+
+/* ---------------------
+   Tablet 425px Screen 
+------------------------ */
+@media (max-width: 425px) {
+    .leftside { display: none; }
+
+    .hidden769 {
+        padding: 1.5em 1em .875em;
+        background: #EDEEEE;
+        margin-top: -2.47%;
+        font-size: .8em;
+  }
+}
+
+/* ---------------------------------------------------
+    RIGHT CARD STYLE
+----------------------------------------------------- */
+/* ---------------------
+   Tablet 769px+ Screen 
+------------------------ */
+@media (min-width: 769px) {
+    .rightside {
+        position: absolute;
+        right: 0px;
+        width: 70%;
+        display: block;
+        }
+
+    .rightside h2 {
+        color: #0d5885;
+        font-size: 2.8em;
+        margin-bottom: 23px;
+        margin-top: 50px;
+        letter-spacing: 3px;
+        text-align: center;
+    }
+
+    form label {
+        color: #6C6C6C;
+        font-weight: 500;
+    }
+
+    .fa-plus{
+        display: none;
+    }
+
+    .form-row {
+        padding-bottom: 1em;
+    }
+    
+    .col-wider {
+        display: inline-block;
+        width: 45.6%;
+    }
+    .col-wide {
+        display: inline-block;
+        width: 35%;
+    }
+    
+    .col-narrow {
+        display: inline-block;
+        width: 10%;
+    }
+        
+}
+
+/* ---------------------
+   Tablet 768px- Screen 
+------------------------ */
+@media (max-width: 768px) and (min-width: 426px){
+    .rightside {
+        width: 100%;
+        float: left;
+        }
+
+    .rightside h2 {
+        color: #0d5885;
+        font-size: 2.8em;
+        padding-bottom: 1em;
+        padding-right: 10%;
+        padding-left: 10%;
+        text-align: center;
+        letter-spacing: 1px;
+    }
+
+    form label {
+        color: #6C6C6C;
+        font-weight: 500;
+    }
+    
+    .fa-plus {
+        display: none;
+    }
+
+    .form-row {
+        padding-bottom: 1em;
+        padding-left: 4em;
+    }
+    
+    .col-wider {
+        display: inline-block;
+        width: 45.6%;
+    }
+    .col-wide {
+        display: inline-block;
+        width: 35%;
+    }
+    
+    .col-narrow {
+        display: inline-block;
+        width: 10%;
+    }
+}
+
+/* ---------------------
+   Mobile L 425 Screen 
+------------------------ */
+@media (max-width: 425px) {
+    .rightside {
+        width: 100%;
+        float: left;
+        }
+
+    .rightside h2 {
+        color: #0d5885;
+        font-size: 1.625em;
+        padding-bottom: .5em;
+        padding-right: 10%;
+        padding-left: 10%;
+        text-align: center;
+    }
+
+    .rightside h2 span {
+        display: none;
+    }
+
+    .fa-plus {
+        color: #0d5885;
+        font-size: 2em;
+        padding-left: 1em;
+    }
+
+    #click_advance div {
+        display: none;
+    }
+
+    form label {
+        color: #6C6C6C;
+        font-weight: 500;
+    }
+
+    .form-row {
+        padding-bottom: .3em;
+    }
+    
+    .col-wider {
+        display: inline-block;
+        width: 96%;
+    }
+
+    .mailingAdd{
+        width: 75%;
+    }
+
+    .col-wide {
+        display: inline-block;
+        width: 75%;
+    }
+    
+    .col-narrow {
+        display: inline-block;
+        width: 20%;
+    }
+
+    .state {
+        width: 25%;
+    }
+
+    .zipcode {
+        width: 70%;
+    }
+        
+}
+
+/* ---------------------
+   Mobile M 320 Screen 
+------------------------ */
+@media (max-width: 320px) {
+    .rightside {
+        width: 100%;
+        float: left;
+        }
+
+    .rightside h2 {
+        color: #0d5885;
+        font-size: 1.625em;
+        padding-bottom: .5em;
+        padding-right: 0;
+        padding-left: 0;
+        text-align: center;
+    }
+}
+
+
+/* ---------------------------------------------------
+    BUTTON STYLE
+----------------------------------------------------- */
+
+.submitbtn {
+    position: absolute;
+    right: 10%;
+    padding-top: 1em;
+}
