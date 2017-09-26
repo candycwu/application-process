@@ -593,9 +593,100 @@ hr.style1{
 /* ---------------------------------------------------
     BUTTON STYLE
 ----------------------------------------------------- */
-
 .submitbtn {
     position: absolute;
     right: 10%;
     padding-top: 1em;
+}
+
+/* ---------------------------------------------------
+    FOOTER STYLE
+----------------------------------------------------- */
+/* ---------------------
+   Tablet 768px+ Screen 
+------------------------ */
+@media (min-width: 768px) {
+    .footerlinks {
+        width: 100%;
+        text-align: center;
+        padding-bottom: 0.35em;
+
+    }
+
+    .footerlinks ul {
+        margin-top: 1.2em;    
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+    }
+
+    .footerlinks li {
+        font-size: 0.865em;
+        padding-right: 1.5em;
+    }
+
+    .footerlinks span {
+        font-size: 0.865em;
+        color: #666666;
+    }
+}
+
+/* ---------------------
+   Tablet 425px+ Screen 
+------------------------ */
+@media (max-width: 767px) and (min-width: 375px){
+    .footerlinks {
+        width: 100%;
+        text-align: center;
+        padding-bottom: 0.35em;
+
+    }
+
+    .footerlinks ul {
+        margin-top: 1.2em;    
+        list-style-type: none;
+        padding-left: 0.2em;
+        display: flex;
+        justify-content: center;
+    }
+
+    .footerlinks li {
+        font-size: 0.865em;
+        padding-right: 1.5em;
+    }
+
+    .footerlinks span {
+        font-size: 0.865em;
+        color: #666666;
+    }
+}
+
+/* ---------------------
+   Tablet 374px- Screen 
+------------------------ */
+@media (max-width: 374px) {
+    .footerlinks {
+        width: 100%;
+        text-align: center;
+        padding-bottom: 0.35em;
+    }
+
+    .footerlinks ul {
+        margin-top: 1.2em;    
+        list-style-type: none;
+        padding-left: 1em;
+        display: flex;
+        justify-content: center;
+    }
+
+    .footerlinks li {
+        font-size: 0.865em;
+        padding-right: 1em;
+    }
+
+    .footerlinks span {
+        font-size: 0.865em;
+        color: #666666;
+    }
+
 }
