@@ -447,7 +447,7 @@ p {
     .rightside h2 {
         color: #0d5885;
         font-size: 1.625em;
-        padding-bottom: 1em;
+        padding-bottom: .5em;
         padding-right: 10%;
         padding-left: 10%;
         text-align: center;
@@ -459,7 +459,8 @@ p {
 
     #click_advance i {
         color: #0d5885;
-        font-size: 20px;
+        font-size: 2em;
+        padding-left: 1em;
     }
 
     #click_advance div {
@@ -479,6 +480,11 @@ p {
         display: inline-block;
         width: 55%;
     }
+
+    .mailingAdd{
+        width: 75%;
+    }
+
     .col-wide {
         display: inline-block;
         width: 75%;
