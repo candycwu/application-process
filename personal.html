@@ -101,13 +101,16 @@
                                             <label for="inputAddress">Mailing Address</label>
                                             <input type="text" class="form-control is-valid" id="inputAddress" placeholder="Mailing Address" required>
                                         </div>
-                                        <div class="col-wide">
-                                            <label for="inputAddress">Mailing Address 2</label>
-                                            <input type="text" class="form-control is-valid" id="inputAddress2" placeholder="Mailing Address 2">
-                                        </div>
-                                        <div class="col-narrow">
-                                            <label for="inputAddress3">Unit/Apt.</label>
-                                            <input type="text" class="form-control is-valid" id="inputAddress3" maxlength="5" placeholder="Unit/Apt.">
+                                        <div id="click_advance" style="display: inline;">
+                                            <i class="fa fa-plus" aria-hidden="true"></i>
+                                            <div class="col-wide display_advance">
+                                                <label for="inputAddress">Mailing Address 2</label>
+                                                <input type="text" class="form-control is-valid" id="inputAddress2" placeholder="Mailing Address 2">
+                                            </div>
+                                            <div class="col-narrow display_advance">
+                                                <label for="inputAddress3">Unit/Apt.</label>
+                                                <input type="text" class="form-control is-valid" id="inputAddress3" maxlength="5" placeholder="Unit/Apt.">
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="form-row">
@@ -214,5 +217,11 @@
                 }
         </script>
 
+        <!-- Toggle + div -->
+        <script>
+        $('#click_advance').click(function() {
+            $('.display_advance').toggle('1000');
+        });
+        </script>
 </body>
 </html>

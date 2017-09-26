@@ -363,6 +363,10 @@ p {
         font-weight: 500;
     }
 
+    #click_advance i {
+        display: none;
+    }
+
     .form-row {
         padding-bottom: 1em;
     }
@@ -386,7 +390,7 @@ p {
 /* ---------------------
    Tablet 768px- Screen 
 ------------------------ */
-@media (max-width: 768px) {
+@media (max-width: 768px) and (min-width: 426px){
     .rightside {
         width: 100%;
         float: left;
@@ -399,11 +403,16 @@ p {
         padding-right: 10%;
         padding-left: 10%;
         text-align: center;
+        letter-spacing: 1px;
     }
 
     form label {
         color: #6C6C6C;
         font-weight: 500;
+    }
+    
+    #click_advance i {
+        display: none;
     }
 
     .form-row {
@@ -448,6 +457,15 @@ p {
         display: none;
     }
 
+    #click_advance i {
+        color: #0d5885;
+        font-size: 20px;
+    }
+
+    #click_advance div {
+        display: none;
+    }
+
     form label {
         color: #6C6C6C;
         font-weight: 500;
@@ -459,7 +477,7 @@ p {
     
     .col-wider {
         display: inline-block;
-        width: 45.6%;
+        width: 55%;
     }
     .col-wide {
         display: inline-block;
