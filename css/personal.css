@@ -539,6 +539,25 @@ hr.style1{
         
 }
 
+/* ---------------------
+   Mobile M 320 Screen 
+------------------------ */
+@media (max-width: 320px) {
+    .rightside {
+        width: 100%;
+        float: left;
+        }
+
+    .rightside h2 {
+        color: #0d5885;
+        font-size: 1.625em;
+        padding-bottom: .5em;
+        padding-right: 0;
+        padding-left: 0;
+        text-align: center;
+    }
+}
+
 
 /* ---------------------------------------------------
     BUTTON STYLE
