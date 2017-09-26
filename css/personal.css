@@ -392,10 +392,6 @@ hr.style1{
         text-align: center;
     }
 
-    #click_advance {
-        display: inline-block;
-    }
-
     form label {
         color: #6C6C6C;
         font-weight: 500;
