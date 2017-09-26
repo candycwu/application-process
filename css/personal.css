@@ -392,6 +392,10 @@ hr.style1{
         text-align: center;
     }
 
+    #click_advance {
+        display: inline-block;
+    }
+
     form label {
         color: #6C6C6C;
         font-weight: 500;
@@ -491,7 +495,7 @@ hr.style1{
         display: none;
     }
 
-    #click_advance i {
+    .fa-plus {
         color: #0d5885;
         font-size: 2em;
         padding-left: 1em;
