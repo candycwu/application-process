@@ -351,10 +351,11 @@ p {
 
     .rightside h2 {
         color: #0d5885;
-        font-size: 2em;
-        padding-bottom: .2em;
-        padding-right: 10%;
-        padding-left: 10%;
+        font-size: 2.8em;
+        margin-bottom: 23px;
+        margin-top: 50px;
+        letter-spacing: 3px;
+        text-align: center;
     }
 
     form label {
@@ -397,9 +398,53 @@ p {
         padding-bottom: 1em;
         padding-right: 10%;
         padding-left: 10%;
+        text-align: center;
     }
 
-    .hidewhensmall {
+    form label {
+        color: #6C6C6C;
+        font-weight: 500;
+    }
+
+    .form-row {
+        padding-bottom: 1em;
+        padding-left: 4em;
+    }
+    
+    .col-wider {
+        display: inline-block;
+        width: 45.6%;
+    }
+    .col-wide {
+        display: inline-block;
+        width: 35%;
+    }
+    
+    .col-narrow {
+        display: inline-block;
+        width: 10%;
+    }
+    }
+
+/* ---------------------
+   Mobile L 425 Screen 
+------------------------ */
+@media (max-width: 425px) {
+    .rightside {
+        width: 100%;
+        float: left;
+        }
+
+    .rightside h2 {
+        color: #0d5885;
+        font-size: 1.625em;
+        padding-bottom: 1em;
+        padding-right: 10%;
+        padding-left: 10%;
+        text-align: center;
+    }
+
+    .rightside h2 span {
         display: none;
     }
 
@@ -423,48 +468,7 @@ p {
     
     .col-narrow {
         display: inline-block;
-        width: 25%;
-    }
-    }
-
-/* ---------------------
-   Mobile L 425 Screen 
------------------------- */
-@media (max-width: 425px) {
-    .rightside {
-        width: 100%;
-        float: left;
-        }
-
-    .rightside h2 {
-        color: #0d5885;
-        font-size: 1.625em;
-        padding-bottom: 1em;
-        padding-right: 10%;
-        padding-left: 10%;
-    }
-
-    form label {
-        color: #6C6C6C;
-        font-weight: 500;
-    }
-
-    .form-row {
-        padding-bottom: 1em;
-    }
-    
-    .col-wider {
-        display: inline-block;
-        width: 45.6%;
-    }
-    .col-wide {
-        display: inline-block;
-        width: 35%;
-    }
-    
-    .col-narrow {
-        display: inline-block;
-        width: 10%;
+        width: 20%;
     }
         
 }
