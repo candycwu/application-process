@@ -257,7 +257,7 @@ hr.style1{
         border: solid #133F91;
         background: #133F91;
         color: white;
-        font-weight: bold;
+        font-weight: normal;
         letter-spacing: 1px;
     } 
 }

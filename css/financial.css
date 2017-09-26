@@ -312,251 +312,8 @@ hr.style1{
     }
 }
 /* ---------------------------------------------------
-    LEFT CARD STYLE
+    CARD CONTENT STYLE
 ----------------------------------------------------- */
-/* ---------------------
-   Laptop 769px+ Screen 
------------------------- */
-@media (min-width: 769px) {
-    .leftside {
-        position: absolute;
-        width: 30%;
-        padding: 1em 1em 1em 2em;
-        display: block;
-        background: rgba(255,255,255,0.5);
-    }
-
-    .leftside p {
-        line-height: 1.5em;
-        text-align: left;
-        padding-bottom: .65em;
-        font-size: .875em;
-    }
-
-    .leftside img {
-        width: 13.625em;
-    }
-
-    .hidden769 {
-        display: none;
-    }
-}
-
-/* ---------------------
-   Tablet 768px Screen 
------------------------- */
-@media (max-width: 768px) {
-    .leftside { display: none; }
-
-    .hidden769 {
-        padding: 1.5em 1em .875em;
-        background: #EDEEEE;
-        margin-top: -1.37%;
-  }
-}
-
-/* ---------------------
-   Tablet 425px Screen 
------------------------- */
-@media (max-width: 425px) {
-    .leftside { display: none; }
-
-    .hidden769 {
-        padding: 1.5em 1em .875em;
-        background: #EDEEEE;
-        margin-top: -2.47%;
-        font-size: .8em;
-  }
-}
-
-/* ---------------------------------------------------
-    RIGHT CARD STYLE
------------------------------------------------------ */
-/* ---------------------
-   Tablet 769px+ Screen 
------------------------- */
-@media (min-width: 769px) {
-    .rightside {
-        position: absolute;
-        right: 0px;
-        width: 70%;
-        display: block;
-        }
-
-    .rightside h2 {
-        color: #0d5885;
-        font-size: 2.8em;
-        margin-bottom: 23px;
-        margin-top: 50px;
-        letter-spacing: 3px;
-        text-align: center;
-    }
-
-    form label {
-        color: #6C6C6C;
-        font-weight: 500;
-    }
-
-    .fa-plus{
-        display: none;
-    }
-
-    .form-row {
-        padding-bottom: 1em;
-    }
-    
-    .col-wider {
-        display: inline-block;
-        width: 45.6%;
-    }
-    .col-wide {
-        display: inline-block;
-        width: 35%;
-    }
-    
-    .col-narrow {
-        display: inline-block;
-        width: 10%;
-    }
-        
-}
-
-/* ---------------------
-   Tablet 768px- Screen 
------------------------- */
-@media (max-width: 768px) and (min-width: 426px){
-    .rightside {
-        width: 100%;
-        float: left;
-        }
-
-    .rightside h2 {
-        color: #0d5885;
-        font-size: 2.8em;
-        padding-bottom: 1em;
-        padding-right: 10%;
-        padding-left: 10%;
-        text-align: center;
-        letter-spacing: 1px;
-    }
-
-    form label {
-        color: #6C6C6C;
-        font-weight: 500;
-    }
-    
-    .fa-plus {
-        display: none;
-    }
-
-    .form-row {
-        padding-bottom: 1em;
-        padding-left: 4em;
-    }
-    
-    .col-wider {
-        display: inline-block;
-        width: 45.6%;
-    }
-    .col-wide {
-        display: inline-block;
-        width: 35%;
-    }
-    
-    .col-narrow {
-        display: inline-block;
-        width: 10%;
-    }
-}
-
-/* ---------------------
-   Mobile L 425 Screen 
------------------------- */
-@media (max-width: 425px) {
-    .rightside {
-        width: 100%;
-        float: left;
-        }
-
-    .rightside h2 {
-        color: #0d5885;
-        font-size: 1.625em;
-        padding-bottom: .5em;
-        padding-right: 10%;
-        padding-left: 10%;
-        text-align: center;
-    }
-
-    .rightside h2 span {
-        display: none;
-    }
-
-    .fa-plus {
-        color: #0d5885;
-        font-size: 2em;
-        padding-left: 1em;
-    }
-
-    #click_advance div {
-        display: none;
-    }
-
-    form label {
-        color: #6C6C6C;
-        font-weight: 500;
-    }
-
-    .form-row {
-        padding-bottom: .3em;
-    }
-    
-    .col-wider {
-        display: inline-block;
-        width: 96%;
-    }
-
-    .mailingAdd{
-        width: 75%;
-    }
-
-    .col-wide {
-        display: inline-block;
-        width: 75%;
-    }
-    
-    .col-narrow {
-        display: inline-block;
-        width: 20%;
-    }
-
-    .state {
-        width: 25%;
-    }
-
-    .zipcode {
-        width: 70%;
-    }
-        
-}
-
-/* ---------------------
-   Mobile M 320 Screen 
------------------------- */
-@media (max-width: 320px) {
-    .rightside {
-        width: 100%;
-        float: left;
-        }
-
-    .rightside h2 {
-        color: #0d5885;
-        font-size: 1.625em;
-        padding-bottom: .5em;
-        padding-right: 0;
-        padding-left: 0;
-        text-align: center;
-    }
-}
 
 
 /* ---------------------------------------------------
@@ -567,4 +324,96 @@ hr.style1{
     position: absolute;
     right: 10%;
     padding-top: 1em;
+}
+
+/* ---------------------------------------------------
+    FOOTER STYLE
+----------------------------------------------------- */
+/* ---------------------
+   Tablet 768px+ Screen 
+------------------------ */
+@media (min-width: 768px) {
+    .footerlinks {
+        width: 100%;
+        text-align: center;
+        padding-bottom: 0.35em;
+
+    }
+
+    .footerlinks ul {
+        margin-top: 1.2em;    
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+    }
+
+    .footerlinks li {
+        font-size: 0.865em;
+        padding-right: 1.5em;
+    }
+
+    .footerlinks span {
+        font-size: 0.865em;
+        color: #666666;
+    }
+}
+
+/* ---------------------
+   Tablet 425px+ Screen 
+------------------------ */
+@media (max-width: 767px) and (min-width: 375px){
+    .footerlinks {
+        width: 100%;
+        text-align: center;
+        padding-bottom: 0.35em;
+
+    }
+
+    .footerlinks ul {
+        margin-top: 1.2em;    
+        list-style-type: none;
+        padding-left: 0.2em;
+        display: flex;
+        justify-content: center;
+    }
+
+    .footerlinks li {
+        font-size: 0.865em;
+        padding-right: 1.5em;
+    }
+
+    .footerlinks span {
+        font-size: 0.865em;
+        color: #666666;
+    }
+}
+
+/* ---------------------
+   Tablet 374px- Screen 
+------------------------ */
+@media (max-width: 374px) {
+    .footerlinks {
+        width: 100%;
+        text-align: center;
+        padding-bottom: 0.35em;
+    }
+
+    .footerlinks ul {
+        margin-top: 1.2em;    
+        list-style-type: none;
+        padding-left: 1em;
+        display: flex;
+        justify-content: center;
+    }
+
+    .footerlinks li {
+        font-size: 0.865em;
+        padding-right: 1em;
+    }
+
+    .footerlinks span {
+        font-size: 0.865em;
+        color: #666666;
+    }
+
 }
