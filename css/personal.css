@@ -21,6 +21,12 @@ p {
     background: linear-gradient(to top, #f2fcfe, #6190e8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
+hr.style1{
+    margin-top: 10px;
+    margin-bottom: 5px;
+	border-top: 1px solid #8c8b8b;
+    }
+
 /* ---------------------------------------------------
     MAIN HEADER STYLE
 ----------------------------------------------------- */
@@ -359,6 +365,7 @@ p {
         padding: 1.5em 1em .875em;
         background: #EDEEEE;
         margin-top: -2.47%;
+        font-size: .8em;
   }
 }
 
@@ -438,7 +445,7 @@ p {
         font-weight: 500;
     }
     
-    #click_advance i {
+    .fa-plus {
         display: none;
     }
 
