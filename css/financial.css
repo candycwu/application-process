@@ -64,7 +64,7 @@ hr.style1{
 /* ---------------------
    Mobile L 425 Screen 
 ------------------------ */
-@media (max-width: 425px) {
+@media (min-width: 425px) and (max-width: 767px) {
     .header-container {
         margin: 0 2em;
         color: white;
@@ -90,7 +90,7 @@ hr.style1{
 /* ---------------------
    Mobile M 375px Screen 
 ------------------------ */
-@media (max-width: 375px) {
+@media (min-width: 375px) and (max-width: 424px) {
     .header-container {
         margin: 0 1em;
         color: white;
@@ -162,7 +162,7 @@ hr.style1{
 /* ---------------------
    Mobile L 425 Screen 
 ------------------------ */
-@media (max-width: 425px) {
+@media (min-width: 425px) and (max-width: 767px) {
     .progresstitles {
         font-size: .85em;
         padding: 5em 2em .5em 2em;
@@ -192,7 +192,7 @@ hr.style1{
 /* ---------------------
    Mobile M 375px Screen 
 ------------------------ */
-@media (max-width: 375px) {
+@media (max-width: 424px) {
     .progresstitles {
         font-size: .75em;
         padding: 5em 2.3em .5em 2.3em;
@@ -229,12 +229,43 @@ hr.style1{
     .card-header span {
         display: none;
     }
+    .bodycardcontainer {
+        padding-left: 10%;
+        padding-right: 10%;
+        margin-right: auto;
+        margin-left: auto;
+        padding-top: 1em;
+    }
+
+    .card-body {
+        position: relative;
+    }
+
+    .maincard {
+        background: rgba(255,255,255,0.9);
+        padding-bottom: 30em;
+        margin-right: auto;
+        margin-left: auto;
+        box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.5);
+        border-radius: 4px 4px 4px 4px;
+    }
+
+    .card-header {
+        font-size: 1.5em;
+        padding: 0.2em 0.55em;
+        border-radius: 4px 4px 0px 0px;
+        border: solid #133F91;
+        background: #133F91;
+        color: white;
+        font-weight: normal;
+        letter-spacing: 1px;
+    } 
 }
 
 /* ---------------------
    Tablet 768px Screen 
 ------------------------ */
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 768px) {
     .bodycardcontainer {
         padding-left: 15px;
         padding-right: 15px;
@@ -275,7 +306,7 @@ hr.style1{
 /* ---------------------
    Mobile L 425 Screen 
 ------------------------ */
-@media (max-width: 425px) {
+@media (max-width: 767px) {
     .bodycardcontainer {
         padding-left: 15px;
         padding-right: 15px;
@@ -317,7 +348,7 @@ hr.style1{
 /* ---------------------
    Tablet 768px+ Screen 
 ------------------------ */
-@media (min-width: 768px) {
+@media (min-width: 769px) {
     div.card-body h2 {
         font-size: 3.125em;
         color: #0d5885;
