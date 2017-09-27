@@ -342,6 +342,7 @@ div.card-body h2 {
 
 .form-group {
     width: 100%;
+    margin-bottom: 0;
 }
 
 .showinput {
@@ -354,6 +355,10 @@ div.card-body h2 {
     width: 45%;
     display: inline-block;
     vertical-align: top;
+}
+
+.gai-soi-e {
+    width: 45%;
 }
 /* ---------------------------------------------------
     BUTTON STYLE
