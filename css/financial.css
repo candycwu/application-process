@@ -330,11 +330,6 @@ div.card-body h2 {
     margin-top: 1em;
 }
 
-.form-check-input {
-    width: 30px;
-    height: 20px;
-}
-
 .form-check {
     display: inline-block;
 }
@@ -342,6 +337,7 @@ div.card-body h2 {
 .form-check label {
     font-size: 1em;
     font-weight: normal;
+    padding-right: 1em;
 }
 
 .form
