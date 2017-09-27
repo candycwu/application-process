@@ -223,9 +223,9 @@ hr.style1{
     CARD STYLE
 ----------------------------------------------------- */
 /* ---------------------
-   Hide Info Icon 769px+
+   Hide Info Icon 866px+
 ------------------------ */
-@media (min-width: 769px) {    
+@media (min-width: 866px) {    
     .card-header span {
         display: none;
     }
@@ -265,7 +265,7 @@ hr.style1{
 /* ---------------------
    Tablet 768px Screen 
 ------------------------ */
-@media (min-width: 768px) and (max-width: 768px) {
+@media (min-width: 768px) and (max-width: 865px) {
     .bodycardcontainer {
         padding-left: 15px;
         padding-right: 15px;
@@ -348,7 +348,7 @@ hr.style1{
 /* ---------------------
    Laptop 769px+ Screen 
 ------------------------ */
-@media (min-width: 769px) {
+@media (min-width: 866px) {
     .leftside {
         position: absolute;
         width: 30%;
@@ -404,7 +404,7 @@ hr.style1{
     RIGHT CARD STYLE
 ----------------------------------------------------- */
 
-@media (min-width: 865px) {
+@media (min-width: 866px) {
     .rightside {
         position: absolute;
         right: 0px;
@@ -453,7 +453,7 @@ hr.style1{
 /* ---------------------
    Tablet 769px+ Screen 
 ------------------------ */
-@media (min-width: 769px) and (max-width: 864px) {
+@media (min-width: 769px) and (max-width: 865px) {
     .rightside {
         position: absolute;
         right: 0px;
