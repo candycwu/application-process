@@ -330,6 +330,9 @@ div.card-body h2 {
     margin-top: 1em;
 }
 
+.formstyle {
+    padding-left: 10%;
+}
 .form-check {
     display: inline-block;
 }
@@ -357,8 +360,13 @@ div.card-body h2 {
     vertical-align: top;
 }
 
-.gai-soi-e {
+.gai {
     width: 45%;
+}
+
+.soi-e {
+    width: 45%;
+    display: inline-block;
 }
 /* ---------------------------------------------------
     BUTTON STYLE

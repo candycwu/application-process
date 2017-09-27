@@ -68,7 +68,7 @@
                             </div>
                         </div>
                     </div>
-                    <form>
+                    <form class="formstyle">
                         <div class="container-fluid">
                             <div class="form-group">
                                 <div class="optionsofres">
@@ -98,7 +98,7 @@
                                     </div>
                             </div>
                             <div class="form-group">
-                                <div class="gai-soi-e">
+                                <div class="gai">
                                     <label for "gaincome">Gross Annual Income</label> 
                                     <div class="input-group">
                                         <span class="input-group-addon">$</span>
@@ -106,15 +106,27 @@
                                         <span class="input-group-addon">.00</span>
                                     </div>
                                 </div>
-                                <div class="gai-soi-e">
+                                <div class="soi-e">
                                     <label for="inputSOI">Source of Employment</label>
-                                    <select id="inputSOI" class="form-control">Select One</select>
-                                </div>
-                                
-                            </div>
+                                    <select id="inputSOI" class="form-control">
+                                        <option value="SOIselectone" selected>Select One</option>
+                                        <option value="SOIemployed">Employed</option>
+                                        <option value="SOIunemployed">Unemployed</option>
+                                        <option value="SOIselfemployed">Self Employed</option>
+                                        <option value="SOIstudent">Student</option>
+                                        <option value="SOIdisabled">Disabled</option>
+                                        <option value="SOIretired">Retired</option>
+                                        <option value="SOImilitary">Military</option>
+                                        <option value="SOIother">Other</option>
+                                    </select>
 
+                                </div>  
+                                <div class="soi-e">
+                                    <label for="inputEmploymt">Employer</label> 
+                                    <input type="text" class="form-control" id="inputEmploymt" placeholder="Employer">       
+                                </div>        
+                            </div>
                         </div>
-                   
                     </form>
                 </div>
                 <div class="submitbtn">
