@@ -68,23 +68,24 @@
                             </div>
                         </div>
                     </div>
-                    <form class="genfinancialinfo">
-                            <div class="col-narrow">
-                                    <label for="typeofresidence">Type of Residence</label>
-                                        <select id="typeofresidence" class="form-control">
-                                            <option selected> Select One</option>
-                                            <option value="residencerent">Rent</option>
-                                            <option value="residenceown">Own</option>
-                                            <option value="residenceother">Other</option>
-                                        </select>
-                                        <div id="residencerent" class="monthpayment" style="display:none"> 1 </div>
-                                        <div id="residenceown" class="monthhpayment" style="display:none"> </div>
-                                        <div id="residenceother" class="monthhpayment" style="display:none"> 3 </div>
-                                </div>
-                           
+                    <form>
+                        <div class="container-fluid">
+                            <div class="form-group">
+                                <select id="typeofres" class="form-control">
+                                    <option value="red">Red</option>
+                                    <option value="yellow">Yellow</option>
+                                    <option value="blue">Blue</option>
+                                    <option value="green">Green</option>
+                                    </select>
+                                    <div id="red" class="colors" style="display:none"> red... </div>
+                                    <div id="yellow" class="colors" style="display:none"> yellow.. </div>
+                                    <div id="blue" class="colors" style="display:none"> blue.. </div>
+                                    <div id="green" class="colors" style="display:none"> green.. </div>
+                            </div>
 
+                        </div>
+                   
                     </form>
-
                 </div>
                 <div class="submitbtn">
                     <div class="container-fluid">
@@ -133,12 +134,12 @@
         </script>
 
         <script>
-            $(function() {
-                $('#typeofresidence').change(function(){
-                    $('.monthhpayment').hide();
-                    $('#' + $(this).val()).show();
-                });
+        $(function() {
+            $('#typeofres').change(function(){
+                $('.colors').hide();
+                $('#' + $(this).val()).show();
             });
+        });
         </script>
 </body>
 </html>
