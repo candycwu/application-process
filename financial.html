@@ -71,29 +71,33 @@
                     <form>
                         <div class="container-fluid">
                             <div class="form-group">
-                                <label></label>
-                                <select id="typeofres" class="form-control">
-                                    <option value="selectone">Select One</option>
-                                    <option value="rentres">Rent</option>
-                                    <option value="ownres">Own</option>
-                                    <option value="otherres">Other</option>
-                                    </select>
-                                    <div id="selectone" class="restype" style="display:none"> </div>
-                                    <div id="rentres" class="restype" style="display:none">
-                                        <label for "rent">Monthly housing payment</label> 
-                                        <div class="input-group">
-                                            <span class="input-group-addon">$</span>
-                                            <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)" onkeypress="validate(event)" maxlength="5">
-                                            <span class="input-group-addon">.00</span>
+                                <div class="optionsofres">
+                                    <label for="typeofres">Type of Residence</label>
+                                    <select id="typeofres" class="form-control">
+                                        <option value="selectone">Select One</option>
+                                        <option value="rentres">Rent</option>
+                                        <option value="ownres">Own</option>
+                                        <option value="otherres">Other</option>
+                                        </select>
+                                </div>
+                                    <div class="showinput">                                            
+                                        <div id="rentres" class="restype" style="display:none">
+                                            <label for "rent">Monthly housing payment</label> 
+                                            <div class="input-group">
+                                                <span class="input-group-addon">$</span>
+                                                <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)" onkeypress="validate(event)" maxlength="5">
+                                                <span class="input-group-addon">.00</span>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div id="ownres" class="restype" style="display:none"> </div>
-                                    <div id="otherres" class="restype" style="display:none">
-                                        <label for "rent">Monthly housing payment</label> 
-                                        <div class="input-group">
-                                            <span class="input-group-addon">$</span>
-                                            <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)" onkeypress="validate(event)" maxlength="5">
-                                            <span class="input-group-addon">.00</span>
+                                    <div class="showinput">                                            
+                                        <div id="otherres" class="restype" style="display:none">
+                                            <label for "rent">Monthly housing payment</label> 
+                                            <div class="input-group">
+                                                <span class="input-group-addon">$</span>
+                                                <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)" onkeypress="validate(event)" maxlength="5">
+                                                <span class="input-group-addon">.00</span>
+                                            </div>
                                         </div>
                                     </div>
                             </div>
@@ -159,8 +163,8 @@
         <script>
         $(function() {
             $('#typeofres').change(function(){
-                $('.restype').hide();
-                $('#' + $(this).val()).show();
+                $('.restype').hide({direction:"left"});
+                $('#' + $(this).val()).show({direction: "right"});
             });
         });
         </script>

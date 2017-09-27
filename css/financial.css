@@ -341,9 +341,20 @@ div.card-body h2 {
 }
 
 .form-group {
-    width: 45%;
+    width: 100%;
 }
 
+.showinput {
+    width: 45%;
+    vertical-align: top;
+    display: inline-block;
+}
+
+.optionsofres {
+    width: 45%;
+    display: inline-block;
+    vertical-align: top;
+}
 /* ---------------------------------------------------
     BUTTON STYLE
 ----------------------------------------------------- */
