@@ -315,6 +315,27 @@ hr.style1{
     CARD CONTENT STYLE
 ----------------------------------------------------- */
 
+div.card-body h2 {
+    font-size: 3.125em;
+    color: #0d5885;
+    text-align: center;
+}
+
+.acccheckboxes {
+    font-size: 1.25em;
+    color: #44454f;
+    display: flex;
+    justify-content: space-around;
+}
+
+.form-check {
+    display: inline-block;
+}
+
+.form-check label {
+    font-size: .875em;
+    font-weight: normal;
+}
 
 /* ---------------------------------------------------
     BUTTON STYLE

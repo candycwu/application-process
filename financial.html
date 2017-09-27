@@ -7,13 +7,13 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <!-- Title -->
-    <title>Application: Personal Information</title>
+    <title>Application: Financial Information</title>
     <!-- Font Awesome CDN -->
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Bootstrap CSS CDN -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <!-- CSS -->
-    <link rel="stylesheet" href="css/personal.css">
+    <link rel="stylesheet" href="css/financial.css">
 </head>
 <body>
 
@@ -45,30 +45,50 @@
             </div>
         </div>
     </div>
-        <div class="bodycardcontainer">
-            <div class="maincard">
-                <h4 class="card-header">Company Name Here<span id="clickmoreinfo"><i class="fa fa-info-circle" aria-hidden="true"></i></span></h4>
-                <div class="card-body">
-                        <div class="container-fluid">
-                            <h2><span>We need some financial information.</h2>
-                            <Select id="colorselector">
-                                <option value="red">Red</option>
-                                <option value="yellow">Yellow</option>
-                                <option value="blue">Blue</option>
-                                </Select>
-                                <div id="red" class="colors" style="display:none"> red... </div>
-                                <div id="yellow" class="colors" style="display:none"> yellow.. </div>
-                                <div id="blue" class="colors" style="display:none"> blue.. </div>
+    <div class="bodycardcontainer">
+        <div class="maincard">
+            <h4 class="card-header">Company Name Here<span id="clickmoreinfo"><i class="fa fa-info-circle" aria-hidden="true"></i></span></h4>
+            <div class="card-body">
+                <div class="container-fluid">
+                    <h2 class="supertitle"><span>We need some financial information.</span></h2>
+                    <div class="container-fluid acccheckboxes">
+                        <div class="tellselect">
+                            <span>Select the types of account you own</span>
                         </div>
-                        <div class="submitbtn">
-                            <div class="container-fluid">
-                                <button type="submit" id="submission" class="btn btn-secondary">Back</button> 
-                                <button type="submit" id="submission" class="btn btn-primary">Next</button>                                            
+                        <div class="checkcheckboxes">
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type="checkbox" value="option1"> Checking
+                                </label>
+                            </div>
+                            <div class="form-check ">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type="checkbox" value="option2"> Savings
+                                </label>
                             </div>
                         </div>
+                    </div>
+                    <form>
+
+                    </form>
+                    <Select id="colorselector">
+                        <option value="red">Red</option>
+                        <option value="yellow">Yellow</option>
+                        <option value="blue">Blue</option>
+                        </Select>
+                        <div id="red" class="colors" style="display:none"> red... </div>
+                        <div id="yellow" class="colors" style="display:none"> yellow.. </div>
+                        <div id="blue" class="colors" style="display:none"> blue.. </div>
+                </div>
+                <div class="submitbtn">
+                    <div class="container-fluid">
+                        <button type="submit" id="submission" class="btn btn-secondary">Back</button> 
+                        <button type="submit" id="submission" class="btn btn-primary">Next</button>                                            
+                    </div>
                 </div>
             </div>
         </div>
+    </div>
 
     <footer class="footerlinks">
         <div class="container-fluid">
