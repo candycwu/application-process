@@ -71,6 +71,7 @@
                     <form>
                         <div class="container-fluid">
                             <div class="form-group">
+                                <label></label>
                                 <select id="typeofres" class="form-control">
                                     <option value="selectone">Select One</option>
                                     <option value="rentres">Rent</option>
@@ -95,6 +96,14 @@
                                             <span class="input-group-addon">.00</span>
                                         </div>
                                     </div>
+                            </div>
+                            <div class="form-group">
+                                <label for "gaincome">Gross Annual Income</label> 
+                                <div class="input-group">
+                                    <span class="input-group-addon">$</span>
+                                    <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)" onkeypress="validate(event)" maxlength="7">
+                                    <span class="input-group-addon">.00</span>
+                                </div>
                             </div>
 
                         </div>

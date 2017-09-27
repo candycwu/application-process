@@ -340,7 +340,9 @@ div.card-body h2 {
     padding-right: 1em;
 }
 
-.form
+.form-group {
+    width: 45%;
+}
 
 /* ---------------------------------------------------
     BUTTON STYLE
