@@ -249,7 +249,7 @@ hr.style1{
 
     .maincard {
         background: rgba(255,255,255,0.9);
-        padding-bottom: 30em;
+        padding-bottom: 10em;
         margin-right: auto;
         margin-left: auto;
         box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.5);
@@ -314,59 +314,63 @@ hr.style1{
 /* ---------------------------------------------------
     CARD CONTENT STYLE
 ----------------------------------------------------- */
+/* ---------------------
+   Tablet 768px+ Screen 
+------------------------ */
+@media (min-width: 768px) {
+    div.card-body h2 {
+        font-size: 3.125em;
+        color: #0d5885;
+        text-align: center;
+    }
 
-div.card-body h2 {
-    font-size: 3.125em;
-    color: #0d5885;
-    text-align: center;
-}
+    .acccheckboxes {
+        font-size: 1.25em;
+        color: #44454f;
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 3em;
+        margin-top: 1em;
+    }
 
-.acccheckboxes {
-    font-size: 1.25em;
-    color: #44454f;
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 3em;
-    margin-top: 1em;
-}
+    .formstyle {
+        padding-left: 10%;
+    }
+    .form-check {
+        display: inline-block;
+    }
 
-.formstyle {
-    padding-left: 10%;
-}
-.form-check {
-    display: inline-block;
-}
+    .form-check label {
+        font-size: 1em;
+        font-weight: normal;
+        padding-right: 1em;
+    }
 
-.form-check label {
-    font-size: 1em;
-    font-weight: normal;
-    padding-right: 1em;
-}
+    .form-group {
+        width: 100%;
+        margin-bottom: 0;
+    }
 
-.form-group {
-    width: 100%;
-    margin-bottom: 0;
-}
+    .showinput {
+        width: 45%;
+        vertical-align: top;
+        display: inline-block;
+    }
 
-.showinput {
-    width: 45%;
-    vertical-align: top;
-    display: inline-block;
-}
+    .optionsofres {
+        width: 45%;
+        display: inline-block;
+        vertical-align: top;
+    }
 
-.optionsofres {
-    width: 45%;
-    display: inline-block;
-    vertical-align: top;
-}
+    .gai {
+        width: 45%;
+    }
 
-.gai {
-    width: 45%;
-}
-
-.soi-e {
-    width: 45%;
-    display: inline-block;
+    .soi-e {
+        width: 45%;
+        display: inline-block;
+    }
 }
 /* ---------------------------------------------------
     BUTTON STYLE
