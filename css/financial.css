@@ -326,6 +326,13 @@ div.card-body h2 {
     color: #44454f;
     display: flex;
     justify-content: space-around;
+    margin-bottom: 3em;
+    margin-top: 1em;
+}
+
+.form-check-input {
+    width: 30px;
+    height: 20px;
 }
 
 .form-check {
@@ -333,9 +340,11 @@ div.card-body h2 {
 }
 
 .form-check label {
-    font-size: .875em;
+    font-size: 1em;
     font-weight: normal;
 }
+
+.form
 
 /* ---------------------------------------------------
     BUTTON STYLE
