@@ -90,7 +90,7 @@ hr.style1{
 /* ---------------------
    Mobile M 375px Screen 
 ------------------------ */
-@media (min-width: 375px) and (max-width: 424px) {
+@media (max-width: 424px) {
     .header-container {
         margin: 0 1em;
         color: white;
@@ -544,7 +544,7 @@ hr.style1{
 ------------------------ */
 @media (max-width: 425px) {
     div.card-body h2 {
-        font-size: 2em;
+        font-size: 1.725em;
         color: #0d5885;
         text-align: center;
     }
