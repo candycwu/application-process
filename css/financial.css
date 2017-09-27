@@ -243,7 +243,7 @@ hr.style1{
 
     .maincard {
         background: rgba(255,255,255,0.9);
-        padding-bottom: 30em;
+        padding-bottom: 10em;
         margin-right: auto;
         margin-left: auto;
         box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.5);
@@ -320,7 +320,7 @@ hr.style1{
 
     .maincard {
         background: rgba(255,255,255,0.9);
-        padding-bottom: 35em;
+        padding-bottom: 10em;
         margin-right: auto;
         margin-left: auto;
         box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.5);
@@ -346,13 +346,18 @@ hr.style1{
     CARD CONTENT STYLE
 ----------------------------------------------------- */
 /* ---------------------
-   Tablet 768px+ Screen 
+   600px+ Screen 
 ------------------------ */
-@media (min-width: 769px) {
+@media (min-width: 651px) {
     div.card-body h2 {
         font-size: 3.125em;
         color: #0d5885;
         text-align: center;
+    }
+
+    label {
+        color: #44454f;
+        font-weight: 500;
     }
 
     .acccheckboxes {
@@ -403,10 +408,139 @@ hr.style1{
         display: inline-block;
     }
 }
+
+/* ---------------------
+   450px+ Screen 
+------------------------ */
+@media (min-width: 450px) and (max-width: 650px) {
+    div.card-body h2 {
+        font-size: 2em;
+        color: #0d5885;
+        text-align: center;
+    }
+
+    label {
+        color: #44454f;
+        font-weight: 500;
+        font-size: x-small;
+    }
+
+    .acccheckboxes {
+        font-size: .875em;
+        color: #44454f;
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 2em;
+        margin-top: 1em;
+    }
+
+    .formstyle {
+        padding-left: 2%;
+    }
+
+    .form-check {
+        display: inline-block;
+    }
+
+    .form-check label {
+        font-size: .875em;
+        font-weight: normal;
+    }
+
+    .form-group {
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    .showinput {
+        width: 45%;
+        vertical-align: top;
+        display: inline-block;
+    }
+
+    .optionsofres {
+        width: 45%;
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    .gai {
+        width: 45%;
+    }
+
+    .soi-e {
+        width: 45%;
+        display: inline-block;
+    }
+}
+
+/* ---------------------
+   450px+ Screen 
+------------------------ */
+@media (min-width: 425px) and (max-width: 449px) {
+    div.card-body h2 {
+        font-size: 2em;
+        color: #0d5885;
+        text-align: center;
+    }
+
+    label {
+        color: #44454f;
+        font-weight: 500;
+        font-size: x-small;
+    }
+
+    .acccheckboxes {
+        font-size: .875em;
+        color: #44454f;
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 2em;
+        margin-top: 1em;
+    }
+
+    .formstyle {
+        padding-left: 2%;
+    }
+
+    .form-check {
+        display: inline-block;
+    }
+
+    .form-check label {
+        font-size: .875em;
+        font-weight: normal;
+    }
+
+    .form-group {
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    .showinput {
+        width: 45%;
+        vertical-align: top;
+        display: inline-block;
+    }
+
+    .optionsofres {
+        width: 45%;
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    .gai {
+        width: 45%;
+    }
+
+    .soi-e {
+        width: 45%;
+        display: inline-block;
+    }
+}
 /* ---------------------------------------------------
     BUTTON STYLE
 ----------------------------------------------------- */
-
 .submitbtn {
     position: absolute;
     right: 10%;
