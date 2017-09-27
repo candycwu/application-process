@@ -558,10 +558,16 @@ hr.style1{
     .acccheckboxes {
         font-size: .875em;
         color: #44454f;
-        display: flex;
-        justify-content: space-around;
+        text-align: center;
         margin-bottom: 2em;
         margin-top: 1em;
+        font-weight: 600;
+    }
+
+    .checkcheckboxes {
+        padding-top: .825em;
+        display: flex;
+        justify-content: space-around;
     }
 
     .formstyle {
