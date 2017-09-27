@@ -346,7 +346,7 @@ hr.style1{
     CARD CONTENT STYLE
 ----------------------------------------------------- */
 /* ---------------------
-   600px+ Screen 
+   651px+ Screen 
 ------------------------ */
 @media (min-width: 651px) {
     div.card-body h2 {
@@ -475,9 +475,9 @@ hr.style1{
 }
 
 /* ---------------------
-   450px+ Screen 
+   425px-440px Screen 
 ------------------------ */
-@media (min-width: 425px) and (max-width: 449px) {
+@media (min-width: 426px) and (max-width: 449px) {
     div.card-body h2 {
         font-size: 2em;
         color: #0d5885;
@@ -536,6 +536,66 @@ hr.style1{
     .soi-e {
         width: 45%;
         display: inline-block;
+    }
+}
+
+/* ---------------------
+   425px- Screen 
+------------------------ */
+@media (max-width: 425px) {
+    div.card-body h2 {
+        font-size: 2em;
+        color: #0d5885;
+        text-align: center;
+    }
+
+    label {
+        color: #44454f;
+        font-weight: 500;
+        font-size: small;
+    }
+
+    .acccheckboxes {
+        font-size: .875em;
+        color: #44454f;
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 2em;
+        margin-top: 1em;
+    }
+
+    .formstyle {
+        padding-left: 1.5%;
+    }
+
+    .form-check {
+        display: inline-block;
+    }
+
+    .form-check label {
+        font-size: .875em;
+        font-weight: normal;
+    }
+
+    .form-group {
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    .showinput {
+        width: 100%%;
+    }
+
+    .optionsofres {
+        width: 100%;
+    }
+
+    .gai {
+        width: 100%;
+    }
+
+    .soi-e {
+        width: 100%;
     }
 }
 /* ---------------------------------------------------
