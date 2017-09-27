@@ -72,15 +72,15 @@
                         <div class="container-fluid">
                             <div class="form-group">
                                 <select id="typeofres" class="form-control">
-                                    <option value="red">Red</option>
+                                    <option value="selectone">Select One</option>
                                     <option value="yellow">Yellow</option>
                                     <option value="blue">Blue</option>
                                     <option value="green">Green</option>
                                     </select>
-                                    <div id="red" class="colors" style="display:none"> red... </div>
-                                    <div id="yellow" class="colors" style="display:none"> yellow.. </div>
-                                    <div id="blue" class="colors" style="display:none"> blue.. </div>
-                                    <div id="green" class="colors" style="display:none"> green.. </div>
+                                    <div id="selectone" class="restype" style="display:none"> red... </div>
+                                    <div id="yellow" class="restype" style="display:none"> yellow.. </div>
+                                    <div id="blue" class="restype" style="display:none"> blue.. </div>
+                                    <div id="green" class="restype" style="display:none"> green.. </div>
                             </div>
 
                         </div>
@@ -136,7 +136,7 @@
         <script>
         $(function() {
             $('#typeofres').change(function(){
-                $('.colors').hide();
+                $('.restype').hide();
                 $('#' + $(this).val()).show();
             });
         });
