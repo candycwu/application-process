@@ -69,16 +69,17 @@
                         </div>
                     </div>
                     <form>
+                        <Select id="typeofresidence">
+                            <option value="residencerent">Rent</option>
+                            <option value="residenceown">Own</option>
+                            <option value="residenceother">Other</option>
+                            </Select>
+                            <div id="residencerent" class="monthpayment" style="display:none"> 1 </div>
+                            <div id="residenceown" class="monthhpayment" style="display:none"> 2 </div>
+                            <div id="residenceother" class="monthhpayment" style="display:none"> 3 </div>
 
                     </form>
-                    <Select id="colorselector">
-                        <option value="red">Red</option>
-                        <option value="yellow">Yellow</option>
-                        <option value="blue">Blue</option>
-                        </Select>
-                        <div id="red" class="colors" style="display:none"> red... </div>
-                        <div id="yellow" class="colors" style="display:none"> yellow.. </div>
-                        <div id="blue" class="colors" style="display:none"> blue.. </div>
+
                 </div>
                 <div class="submitbtn">
                     <div class="container-fluid">
@@ -128,8 +129,8 @@
 
         <script>
             $(function() {
-                $('#colorselector').change(function(){
-                    $('.colors').hide();
+                $('#typeofresidence').change(function(){
+                    $('.monthhpayment').hide();
                     $('#' + $(this).val()).show();
                 });
             });
