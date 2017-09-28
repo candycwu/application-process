@@ -388,6 +388,16 @@ hr.style1{
         width: 45%;
         display: inline-block;
     }
+
+    .dobmd {
+        width: 15%;
+        display: inline-block;
+    }
+
+    #dobyear {
+        width: 25%;
+        display: inline-block;
+    }
 }
 
 /* ---------------------

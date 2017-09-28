@@ -70,11 +70,11 @@
                             <div class="soi-e">
                                 <label class="doblabel">Date of Birth</label>
                                 <div class="dobvalidate">
-                                    <input type="tel" class="form-control dobmd" id="dobmonth" onkeypress="validate(event)" onchange="handleChange(this);" maxlength="2" placeholder="MM" required>
+                                    <input type="tel" class="form-control maxmin dobmd" min="1" max="12" intOnly="true" id="dobmonth" onkeypress="validate(event)" onchange="handleChange(this);" maxlength="2" placeholder="MM" required>
                                     <span>/</span>
-                                    <input type="tel" class="form-control dobmd" id="dobday" onkeypress="validate(event)" maxlength="2" placeholder="DD" required>
+                                    <input type="tel" class="form-control maxmin dobmd" min="1" max="31" intOnly="true" id="dobday" onkeypress="validate(event)" maxlength="2" placeholder="DD" required>
                                     <span>/</span>
-                                    <input type="tel" class="form-control" id="dobyear" onkeypress="validate(event)" maxlength="4" placeholder="YYYY" required>
+                                    <input type="tel" class="form-control maxmin" min="1" max="2100" intOnly="true" id="dobyear" onkeypress="validate(event)" maxlength="4" placeholder="YYYY" required>
                                 </div>
                             </div>
 
@@ -165,7 +165,6 @@
                         dob_year: { check_date_of_birth: true }
                     }
                 });
-            }
         </script>
 
         <!-- Autoformatting for phone number -->
@@ -214,6 +213,32 @@
             });
         </script>
 
+        <!-- Setting min and maximum for DOB input -->
+        <script>
+        $(".maxmin").each(function () {
+            var thisJ = $(this);
+            var max = thisJ.attr("max") * 1;
+            var min = thisJ.attr("min") * 1;
+            var intOnly = String(thisJ.attr("intOnly")).toLowerCase() == "true";
+
+            var test = function (str) {
+                return str == "" || /* (!intOnly && str == ".") || */
+                    ($.isNumeric(str) && str * 1 <= max && str * 1 >= min &&
+                    (!intOnly || str.indexOf(".") == -1) && str.match(/^0\d/) == null);
+                    // commented out code would allow entries like ".7"
+            };
+
+            thisJ.keydown(function () {
+                var str = thisJ.val();
+                if (test(str)) thisJ.data("dwnval", str);
+            });
+
+            thisJ.keyup(function () {
+                var str = thisJ.val();
+                if (!test(str)) thisJ.val(thisJ.data("dwnval"));
+            })
+        });
+        </script>
         
 </body>
 </html>
