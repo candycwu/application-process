@@ -347,9 +347,9 @@ hr.style1{
     CARD CONTENT STYLE
 ----------------------------------------------------- */
 /* ---------------------
-   651px+ Screen 
+   769px+ Screen 
 ------------------------ */
-@media (min-width: 651px) {
+@media (min-width: 768px) {
     div.card-body h2 {
         font-size: 2.765em;
         color: #0d5885;
@@ -390,12 +390,12 @@ hr.style1{
     }
 
     .dobmd {
-        width: 15%;
+        width: 3.6em;
         display: inline-block;
     }
 
     #dobyear {
-        width: 25%;
+        width: 5em;
         display: inline-block;
     }
 }
@@ -415,40 +415,6 @@ hr.style1{
         font-weight: 500;
         font-size: small;
     }
-
-    /* .formstyle {
-        padding-left: 2%;
-    }
-
-    .form-check {
-        display: inline-block;
-    }
-
-    .form-check label {
-        font-size: .875em;
-        font-weight: normal;
-    }
-
-    .form-group {
-        width: 100%;
-        margin-bottom: 0;
-    }
-
-    .showinput {
-        width: 45%;
-        vertical-align: top;
-        display: inline-block;
-    }
-
-
-    .gai {
-        width: 45%;
-    }
-
-    .soi-e {
-        width: 45%;
-        display: inline-block;
-    } */
 }
 
 /* ---------------------
