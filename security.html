@@ -83,14 +83,14 @@
                                 <input type="text" class="form-control numberSS" id="valueSS" onkeypress="validate(event)" placeholder="XXX-XX-XXXX" maxlength="9" required>       
                             </div> 
                             <div class="soi-e">
-                                <label for"maidenname">Mother's maiden name</label>
+                                <label for="maidenname">Mother's maiden name</label>
                                 <input type="text" class="form-control" id="maidenname" required>
                             </div> 
 
                             <div class="submitbtn">
                                 <div class="container-fluid">
                                     <button type="button" id="goingb" class="btn btn-secondary" onclick="history.back();">Back</button> 
-                                    <button type="submit" id="submission" class="btn btn-primary">Next</button>                                            
+                                    <button type="submit" id="submission" class="btn btn-primary" onclick="dobvalid()">Next</button>                                            
                                 </div>
                             </div>
                     </form>
@@ -140,10 +140,10 @@
 
         <!-- validating bday (18+) -->
         <script>
-            $(".dobvalidate").submit(function(){
-                var day = $("#dob_day").val();
-                var month = $("#dob_month").val();
-                var year = $("#dob_year").val();
+            function dobvalid(){
+                var day = $("#dobday").val();
+                var month = $("#dobmonth").val();
+                var year = $("#dobyear").val();
                 var age = 18;
 
                 var mydate = new Date();
@@ -153,7 +153,7 @@
                 currdate.setFullYear(currdate.getFullYear());
 
                 var age18yrsagodate = new Date();
-                age18yrsagodate.setFullYear(age18yrsagodate.getFullYear() - age)
+                age18yrsagodate.setFullYear(age18yrsagodate.getFullYear() - age);
 
                 var tdage = currdate - age18yrsagodate;
                 var tdinput = currdate - mydate;
@@ -161,10 +161,9 @@
                 if(tdinput > tdage) {
                     return true;
                 } else {
-                    return false;
                     alert ("You must be 18 years or older to apply.");
-                };
-            });
+                }
+            }
 
         </script>
 
