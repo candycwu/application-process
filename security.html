@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Title -->
+    <title>Application: Security</title>
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/security.css">
+</head>
+<body>
+
+
+<header class="jumbo-wrapper">
+    <div class="header-container">
+            <div class="header-left-top-cornerlogo">
+                <!-- <div class="container-fluid"> -->
+                    <img src="images/logo.png">
+                <!-- </div> -->
+            </div>
+            <div class="header-top-right-corner-txt">
+                <h6><i class="fa fa-lock" aria-hidden="true"></i><span> Secure Response</span></h6>
+                <span><a href="#">We protect your information</a></span>
+            </div>
+        <div class="progressbar">
+            <div class="container-fluid">
+                <div class="progresstitles">
+                    <span>Personal</span>
+                    <span>Financial</span>
+                    <span>Security</span>
+                    <span>Review</span>
+                </div>
+                <div class="progressbar-bar">
+                    <div class="progressline">
+                        <div class="progress-bar" role="progressbar" style="width: 75%; height: .25em;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bodycardcontainer">
+        <div class="maincard">
+            <h4 class="card-header">Company Name Here</h4>
+            <div class="card-body">
+                <div class="container-fluid">
+                    <h2 class="supertitle"><span>We need a few more details.</span></h2>
+                    <p>The information below will help us make our decision and keep your new account secure.</p>
+                </div>
+                    <form class="form-group container-fluid formstyle">
+                            <div class="soi-e">
+                                <label for="inputpphone">Primary phone number (mobile preferred)</label> 
+                                <input type="tel" class="form-control phone" id="inputpphone" onkeypress="validate(event)" placeholder="XXX-XXX-XXXX" required>       
+                            </div>   
+                            <div class="soi-e">
+                                <label for="inputpphone1">Alternative phone number (optional)</label> 
+                                <input type="tel" class="form-control phone" id="inputpphone1" onkeypress="validate(event)" placeholder="XXX-XXX-XXXX">       
+                            </div> 
+                            <div class="soi-e">
+                                    <label for="inputEmail">Email address</label>
+                                    <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp">     
+                            </div> 
+
+                            <div class="soi-e">
+                                <label class="bdaylabel">Birthday</label>
+                                <input type="date" class="form-control" id="bdate" max="1900-01-01" max="1999-12-31" required>
+                            </div>
+
+                            <div class="soi-e">
+                                <label for="valueSS">Social Security number</label> 
+                                <input type="text" class="form-control numberSS" id="valueSS" onkeypress="validate(event)" placeholder="XXX-XX-XXXX" maxlength="9" required>       
+                            </div> 
+                            <div class="soi-e">
+                                <label for"maidenname">Mother's maiden name</label>
+                                <input type="text" class="form-control" id="maidenname">
+                            </div> 
+                    </form>
+            </div>
+        </div>
+    </div>                    
+                <div class="submitbtn">
+                    <div class="container-fluid">
+                        <button type="submit" id="submission" class="btn btn-secondary">Back</button> 
+                        <button type="submit" id="submission" class="btn btn-primary">Next</button>                                            
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footerlinks">
+        <div class="container-fluid">
+            <ul>
+                <li><a href="#">Pricing & Terms</a></li>
+                <li><a href-"#">Privacy Notice</a></li>
+                <li><a href="#">Terms of Use</a></li>
+                <li><a href="#">AdChoices</a></li>
+            </ul>
+            <span>&#169; Company Name Goes here</span>
+        </div>
+    </footer>
+</header>
+
+
+
+<!-- jQuery CDN -->
+<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+<!-- Bootstrap Js CDN -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!-- jQuery Nicescroll CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.nicescroll/3.6.8-fix/jquery.nicescroll.min.js"></script>
+
+        <!-- Validating only number input -->
+        <script>
+                function validate(evt) {
+                    var theEvent = evt || window.event;
+                    var key = theEvent.keyCode || theEvent.which;
+                    key = String.fromCharCode( key );
+                    var regex = /[0-9]|\./;
+                    if( !regex.test(key) ) {
+                        theEvent.returnValue = false;
+                        if(theEvent.preventDefault) theEvent.preventDefault();
+                    }
+                }
+        </script>
+
+        <!-- validating bday (18+) -->
+        <script>
+            $(".bdaylabel").submit(function(){
+                var day = $("#dob_day").val();
+                var month = $("#dob_month").val();
+                var year = $("#dob_year").val();
+                var age = 18;
+
+                var mydate = new Date();
+                mydate.setFullYear(year, month-1, day, day-1);
+
+                var currdate = new Date();
+                currdate.setFullYear(currdate.getFullYear() - age);
+
+                if(day==="" || month==="" || year==="") {
+                    return false;
+                };
+
+                return currdate >= mydate;
+
+                }, "You must be at least 18 years of age.");
+
+                $("form").validate({
+                    rules: {
+                        dob_year: { check_date_of_birth: true }
+                    }
+                });
+            }
+        </script>
+
+        <!-- Autoformatting for phone number -->
+        <script>
+            $('.phone').keyup(function(ev) {
+                if (this.value.length > 12) {
+                    this.value = this.value.slice(0, -1);
+                    return;
+                }
+                
+                this.value = this.value.replace(/^(\d{3})(\d)/, '$1-$2')
+                    .replace(/^(\d{3}-\d{3})(\d)/, '$1-$2');
+                });
+        </script>
+
+        <!-- hide first 5 digits of SS number -->
+        <script>
+        $('#valueSS').on('keydown keyup', function() {             
+            
+            $(this).prop("value", function(i, o){
+                if(o.length < 6) {
+                    return o.replace(/\d/g, "*");
+                }
+            });
+       });
+        </script>
+        
+        <!-- Bday Validating -->
+        <script>
+        </script>
+</body>
+</html>
