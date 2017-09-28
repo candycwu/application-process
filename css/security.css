@@ -349,7 +349,7 @@ hr.style1{
 /* ---------------------
    769px+ Screen 
 ------------------------ */
-@media (min-width: 768px) {
+@media (min-width: 721px) {
     div.card-body h2 {
         font-size: 2.765em;
         color: #0d5885;
@@ -359,6 +359,7 @@ hr.style1{
     label {
         color: #44454f;
         font-weight: 500;
+        padding-top: 1em;
     }
 
     .formstyle {
@@ -401,42 +402,130 @@ hr.style1{
 }
 
 /* ---------------------
-   450px+ Screen 
+   530px - 720px Screen 
 ------------------------ */
-@media (min-width: 450px) and (max-width: 650px) {
+@media (min-width: 530px) and (max-width: 720px) {
     div.card-body h2 {
-        font-size: 1.725em;
+        font-size: 1.525em;
         color: #0d5885;
         text-align: center;
+    }
+
+    div.card-body p {
+        font-size: .875em;
     }
 
     label {
         color: #44454f;
         font-weight: 500;
         font-size: small;
+        padding-top: 1em;
+    }
+
+    .hidunder720 {
+        display: none;
+    }
+
+    .formstyle {
+        padding-left: 10%;
+    }
+
+    .form-group {
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    .bdinputsz {
+        width: 4.5em;
+        display: inline-block;
+    }
+
+    .bdinputszy {
+        width: 5.5em;
+        display: inline-block;
+    }
+
+    .bdaylabel {
+        display: block;
+    }
+
+    .soi-e {
+        width: 45%;
+        display: inline-block;
+    }
+
+    .dobmd {
+        width: 3.6em;
+        display: inline-block;
+    }
+
+    #dobyear {
+        width: 5em;
+        display: inline-block;
     }
 }
 
 /* ---------------------
    425px-440px Screen 
 ------------------------ */
-@media (min-width: 426px) and (max-width: 449px) {
+@media (min-width: 426px) and (max-width: 449px) {    
     div.card-body h2 {
-        font-size: 1.725em;
-        color: #0d5885;
-        text-align: center;
-    }
+    font-size: 1.525em;
+    color: #0d5885;
+    text-align: center;
+}
 
-    div.card-body h5 {
-        font-size: 1em;
-        color: #44454f;
-        text-align: center;
+    div.card-body p {
+        font-size: .875em;
     }
 
     label {
         color: #44454f;
         font-weight: 500;
         font-size: small;
+        padding-top: 1em;
+    }
+
+    .hidunder720 {
+        display: none;
+    }
+
+    .formstyle {
+        padding-left: 10%;
+    }
+
+    .form-group {
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    .bdinputsz {
+        width: 4.5em;
+        display: inline-block;
+    }
+
+    .bdinputszy {
+        width: 5.5em;
+        display: inline-block;
+    }
+
+    .bdaylabel {
+        display: block;
+    }
+
+    .soi-e {
+        width: 45%;
+        display: inline-block;
+    }
+
+    .dobmd {
+        width: 3.6em;
+        display: inline-block;
+    }
+
+    #dobyear {
+        width: 5em;
+        display: inline-block;
     }
 }
 
