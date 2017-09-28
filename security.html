@@ -64,12 +64,18 @@
                             </div> 
                             <div class="soi-e">
                                     <label for="inputEmail">Email address</label>
-                                    <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp">     
+                                    <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" required>     
                             </div> 
 
                             <div class="soi-e">
-                                <label class="bdaylabel">Birthday</label>
-                                <input type="date" class="form-control" id="bdate" max="1900-01-01" max="1999-12-31" required>
+                                <label class="doblabel">Date of Birth</label>
+                                <div class="dobvalidate">
+                                    <input type="tel" class="form-control dobmd" id="dobmonth" onkeypress="validate(event)" onchange="handleChange(this);" maxlength="2" placeholder="MM" required>
+                                    <span>/</span>
+                                    <input type="tel" class="form-control dobmd" id="dobday" onkeypress="validate(event)" maxlength="2" placeholder="DD" required>
+                                    <span>/</span>
+                                    <input type="tel" class="form-control" id="dobyear" onkeypress="validate(event)" maxlength="4" placeholder="YYYY" required>
+                                </div>
                             </div>
 
                             <div class="soi-e">
@@ -78,18 +84,20 @@
                             </div> 
                             <div class="soi-e">
                                 <label for"maidenname">Mother's maiden name</label>
-                                <input type="text" class="form-control" id="maidenname">
+                                <input type="text" class="form-control" id="maidenname" required>
                             </div> 
+
+                            <div class="submitbtn">
+                                <div class="container-fluid">
+                                    <button type="button" id="goingb" class="btn btn-secondary" onclick="history.back();">Back</button> 
+                                    <button type="submit" id="submission" class="btn btn-primary">Next</button>                                            
+                                </div>
+                            </div>
                     </form>
             </div>
         </div>
     </div>                    
-                <div class="submitbtn">
-                    <div class="container-fluid">
-                        <button type="submit" id="submission" class="btn btn-secondary">Back</button> 
-                        <button type="submit" id="submission" class="btn btn-primary">Next</button>                                            
-                    </div>
-                </div>
+                
             </div>
         </div>
     </div>
@@ -187,6 +195,25 @@
         
         <!-- Bday Validating -->
         <script>
+            $(".dobvalidate").submit(function(){
+                var day = $("#dobday").val();
+                var month = $("#dobmonth").val();
+                var year = $("#dobyear").val();
+                var age = 18;
+
+                var mydate = new Date();
+                mydate.setFullYear(year, month-1, day-1);
+                var currdate = new Date();
+                currdate.setFullYear(currdate.getFullYear() - age);
+
+                if (((currdate > mydate) || (day === " " || month ===" " || year ===" "))) {
+                    alert("You must be at least 18 years of age to apply (19 for AL and NE; 21 for PR).");
+                    return false;
+                }
+                return true;
+            });
         </script>
+
+        
 </body>
 </html>
