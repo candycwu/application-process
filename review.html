@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Title -->
+    <title>Application: Review</title>
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/review.css">
+</head>
+
+<body>
+<header class="jumbo-wrapper">
+    <div class="header-container">
+            <div class="header-left-top-cornerlogo">
+                <!-- <div class="container-fluid"> -->
+                    <img src="images/logo.png">
+                <!-- </div> -->
+            </div>
+            <div class="header-top-right-corner-txt">
+                <h5><i class="fa fa-lock" aria-hidden="true"></i><span> Secure Response</span></h5>
+                <span><a href="#">We protect your information</a></span>
+            </div>
+        <div class="progressbar">
+            <div class="container-fluid">
+                <div class="progresstitles">
+                    <span>Personal</span>
+                    <span>Financial</span>
+                    <span>Security</span>
+                    <span>Review</span>
+                </div>
+                <div class="progressbar-bar">
+                    <div class="progressline">
+                        <div class="progress-bar" role="progressbar" style="width: 100%; height: .25em;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bodycardcontainer">
+        <div class="maincard">
+            <h4 class="card-header">Company Name Here</h4>
+            <div class="card-body">
+                <div class="container-fluid toplvltitle">
+                    <h2><span>Please review and accept.</span></h2>
+                    <p>Check out the additional features below and review the pricing information, terms and legal certifications. You can also review your application information. When you're ready, submit your application.</p>
+                    <br><hr class="style1"><br>
+                </div>
+                <form class="genpersonalinfo">
+                    <!-- Section 1 Add Authorized User -->
+                    <div class="container-fluid sec1_addauthuser">
+                        <h6>Add authorized users <span>(optional)</span></h6>
+                        <p class="subtexts">You may add up to 1 additional people to your account. We'll send an individual card for him/her.</p>
+                        <i class="fa fa-plus" id="click_advance" aria-hidden="true"><span>Add an authorized user</span></i>
+                        <!-- Add Authorized User Form -->
+                        <div class="sec1_addauthuser_form_style">
+                                <div class="col-wide display_advance" id="firstname">
+                                    <label for="firstname">First name</label>
+                                    <input type="text" class="form-control is-valid" maxlength="15" placeholder="First Name" required>
+                                </div>
+                                <div class="col-narrow display_advance" id="middlename">
+                                    <label for="middlename">M.I.</label>                                    
+                                    <input type="text" class="form-control is-valid" placeholder="M.I." maxlength="1">
+                                </div>
+                                <div class="col-wide display_advance" id="lastname">
+                                    <label for="lastname">Last Name</label>
+                                    <input type="text" class="form-control is-valid" maxlength="15" placeholder="Last Name" required>
+                                </div>
+                                <div class="soi-e display_advance">
+                                    <label class="doblabel">Date of Birth</label>
+                                    <div class="dobvalidate">
+                                        <input type="text" class="form-control maxmin dobmd" min="1" max="12" intOnly="true" id="dobmonth" onkeypress="validate(event)" onchange="handleChange(this);" maxlength="2" placeholder="MM" required>
+                                        <span>/</span>
+                                        <input type="text" class="form-control maxmin dobmd" min="1" max="31" intOnly="true" id="dobday" onkeypress="validate(event)" maxlength="2" placeholder="DD" required>
+                                        <span>/</span>
+                                        <input type="text" class="form-control maxmin" min="1" max="2100" intOnly="true" id="dobyear" onkeypress="validate(event)" maxlength="4" placeholder="YYYY" required>
+                                    </div>
+                                </div>
+        
+                                <label class="display_advance"><input type="checkbox" id="sameadd" class="form-check-input" value="">Same address as applicant.</label>
+        
+                                <div class="authaddress_display form-row display_advance">
+                                    <div class="col-wide mailingAdd" id="inputAddress">
+                                        <label for="inputAddress">Residential Address 1</label>
+                                        <input type="text" class="form-control is-valid" required>
+                                    </div>
+                                        <div class="col-wide display_advance" id="inputAddress2">
+                                            <label for="inputAddress">Residential Address 2</label>
+                                            <input type="text" class="form-control is-valid" >
+                                        </div>
+                                        <div class="col-narrow display_advance" id="inputAddress3">
+                                            <label for="inputAddress3">Unit/Apt.</label>
+                                            <input type="text" class="form-control is-valid" maxlength="5">
+                                        </div>
+                                </div>
+                                <div class="authaddress_display form-row display_advance" id="city">
+                                    <div class="col-wide">
+                                        <label for="city">City</label>
+                                        <input type="text" class="form-control is-valid" required>
+                                    </div>
+                                    <div class="col-narrow state display_advance" id="inputState">
+                                        <label for="inputState">State</label>
+                                        <select class="form-control" required>
+                                            <option selected> </option>
+                                            <option value="AL">AL</option>
+                                            <option value="AK">AK</option>
+                                            <option value="AR">AR</option>	
+                                            <option value="AZ">AZ</option>
+                                            <option value="CA">CA</option>
+                                            <option value="CO">CO</option>
+                                            <option value="CT">CT</option>
+                                            <option value="DC">DC</option>
+                                            <option value="DE">DE</option>
+                                            <option value="FL">FL</option>
+                                            <option value="GA">GA</option>
+                                            <option value="HI">HI</option>
+                                            <option value="IA">IA</option>	
+                                            <option value="ID">ID</option>
+                                            <option value="IL">IL</option>
+                                            <option value="IN">IN</option>
+                                            <option value="KS">KS</option>
+                                            <option value="KY">KY</option>
+                                            <option value="LA">LA</option>
+                                            <option value="MA">MA</option>
+                                            <option value="MD">MD</option>
+                                            <option value="ME">ME</option>
+                                            <option value="MI">MI</option>
+                                            <option value="MN">MN</option>
+                                            <option value="MO">MO</option>	
+                                            <option value="MS">MS</option>
+                                            <option value="MT">MT</option>
+                                            <option value="NC">NC</option>	
+                                            <option value="NE">NE</option>
+                                            <option value="NH">NH</option>
+                                            <option value="NJ">NJ</option>
+                                            <option value="NM">NM</option>			
+                                            <option value="NV">NV</option>
+                                            <option value="NY">NY</option>
+                                            <option value="ND">ND</option>
+                                            <option value="OH">OH</option>
+                                            <option value="OK">OK</option>
+                                            <option value="OR">OR</option>
+                                            <option value="PA">PA</option>
+                                            <option value="RI">RI</option>
+                                            <option value="SC">SC</option>
+                                            <option value="SD">SD</option>
+                                            <option value="TN">TN</option>
+                                            <option value="TX">TX</option>
+                                            <option value="UT">UT</option>
+                                            <option value="VT">VT</option>
+                                            <option value="VA">VA</option>
+                                            <option value="WA">WA</option>
+                                            <option value="WI">WI</option>	
+                                            <option value="WV">WV</option>
+                                            <option value="WY">WY</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-wide zipcode display_advance" id="inputZip">
+                                        <label for="inputZip">ZIP Code</label>
+                                        <input type="text" class="form-control is-valid"  onkeypress="validate(event)" maxlength="5" required>
+                                    </div>
+                                </div>
+                        </div> <!-- closing div for sec1_addauthuser_form_style (line 63) -->
+
+                        <br><hr class="style1"><br>
+                    </div><!-- closing div for sec1_addauthuser (line 58) -->
+                    
+                    <!-- Section 2 Add Transfer Balance-->
+                    <div class="container-fluid sec2_transbal">
+                        <h6>Transfer balances<span>(optional)</span></h6>
+                        <p class="subtexts">You can transfer up to 1 balances from a MasterCard, VISA, Discover, American Express or any store card account to your new account. Enter the Transfer From account number and amount below.</p>
+                        <ul class="subtexts">
+                            <li>Balance transfers may be subject to a fee; please review the Pricing and Terms below.</li>
+                            <li>We will not process any balance transfer requests that are from any other account or loan that we (Company Name Here) or any of our affiliates opened or issued.</li>
+                            <li>The total amount of your request including fees and interest charges cannot exceed your available credit or $15,000, whichever is less.</li>
+                            <li>We will evaluate your balance transfer request, if your request exceeds the amount that we approve, we may either decline the request or send less than the full amount requested to your designated payee.</li>
+                        </ul>
+
+                        <i class="fa fa-plus" id="click_advance1" aria-hidden="true"><span>Transfer Balance</span></i>
+                        <!-- Add Transfer Balance Form -->
+                        <div class="sec2_transbal_form_style">
+                            <div class="col-wide display_advance1">
+                                <label for="traccnum">Account Number</label>
+                                <input type="text" class="form-control is-valid" id="traccnum" maxlength="15" required>
+                            </div>
+                            <div class="col-wide display_advance1" style="vertical-align: top;">
+                                <label for "tramount">Amount</label> 
+                                <div class="input-group">
+                                    <span class="input-group-addon">$</span>
+                                    <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)" onkeypress="validate(event)" maxlength="9" required>
+                                    <span class="input-group-addon">.00</span>
+                                </div>
+                            </div><!-- closing div for transfer amount (line 193) -->
+                        </div><!-- closing div for sec2_transbal_form_style (line 188) -->
+                        <br><hr class="style1"><br>
+                    </div><!-- closing div for sec2_transbal (line 176) -->
+
+                    <!-- Section 3 E-Sign Disclosure -->
+                    <div class="container-fluid sec3_esign">
+                        <h6>E-Sign Disclosure</h6>
+                        <div class="container-fluid" id="scrolldiv">
+                            <div id="esigncontent">
+                                This Paperless Statement E-Sign Disclosure ("Disclosure") applies to each account you have 
+                                with us for which you have selected "Online Only" on the Account Selection page 
+                                ("Accounts").
+                                <br><br>
+                                The words <strong>"we," "us,"</strong> and <strong>"our"</strong> refer to the Chase entity 
+                                with whom you have your Account, and the words <strong>"you"</strong> and 
+                                <strong>"your"</strong> mean you, the individual(s) or entity identified on the Account(s) 
+                                listed on the Account Selection page.  As used in this Disclosure, 
+                                <strong>"Communication"</strong> means any Account periodic statement, or associated 
+                                authorization, agreement, disclosure, notice, or other information related to your Account's 
+                                periodic statement, including but not limited to information that we are required by law to 
+                                provide to you in writing. 
+                                <br><br>
+                                <ol TYPE="1">
+                                <li><strong>Scope of Communications to Be Provided in Electronic Form.</strong> When you 
+                                select "Online Only" with respect to an Account, you agree that we may provide you with any 
+                                Communications in electronic format, and that we may discontinue sending paper 
+                                Communications to you, unless and until you withdraw your consent as described below. Your 
+                                consent to receive electronic communications and transactions includes, but is not limited 
+                                to:</li>
+                                <br><br>
+                                <ul>
+                                <li type="disc">All legal and regulatory disclosures and communications associated with your 
+                                Account </li>
+                                <br><br>
+                                <li type="disc">Periodic disclosures or monthly billing statements for your Account(s)</li>
+                                <br><br>
+                                <li type="disc">Notices or disclosures about a change in the terms of your Account or 
+                                associated payment feature</li>
+                                <br><br>
+                                <li type="disc">Privacy policies and notices</li>
+                                <br><br>
+                                </ul>
+                                <li><strong>Method of Providing Communications to You in Electronic Form.</strong> All 
+                                Communications that we provide to you in electronic form will be provided either (1) via 
+                                e-mail, (2) by access to a website that we will designate in an e-mail notice we send to you 
+                                at the time the information is available, or (3) to the extent permissible by law, by access 
+                                to a website that we will generally designate in advance for such purpose.</li>
+                                <br><br>
+                                <li><strong>How to Withdraw Consent.</strong> You may withdraw your consent to receive 
+                                Communications in electronic form for any of your Accounts by changing your preferences on 
+                                the Account Selection page within www.Chase.com or contacting us at the phone number on the 
+                                back of your card.  At our option, we may treat your provision of an invalid e-mail address, 
+                                or the subsequent malfunction of a previously valid e-mail address, as a withdrawal of your 
+                                consent to receive electronic Communications.  We will not impose a fee to process the 
+                                withdrawal of your consent to receive electronic Communications. Any withdrawal of your 
+                                consent to receive electronic Communications will be effective only after we have a 
+                                reasonable period of time to process your withdrawal.</li>
+                                <br><br>
+                                <li><strong>How to Update Your Records.</strong> It is your responsibility to provide us 
+                                with true, accurate and complete e-mail address, contact, and other information related to 
+                                this Disclosure and your Account(s), and to maintain and update promptly any changes in this 
+                                information.  You can update information (such as your e-mail address) at our website, 
+                                www.Chase.com, or by contacting us at the phone number on the back of your card.</li>
+                                <br><br>
+                                <li><strong>Hardware and Software Requirements.</strong> In order to access, view, and 
+                                retain electronic Communications that we make available to you, you must have:</li>
+                                <br><br>
+                                <ul>
+                                <li type="disc">an Internet browser that supports 128 bit encryption;</li>
+                                <br><br>
+                                <li type="disc">sufficient electronic storage capacity on your computer's hard drive or 
+                                other data storage unit;</li>
+                                <br><br>
+                                <li type="disc">Adobe(R) Acrobat(R) Reader(R) 6.1 or higher;</li>
+                                <br><br>
+                                <li type="disc">an e-mail account with an Internet service provider and e-mail software in 
+                                order to participate in our electronic Communications programs;</li>
+                                <br><br>
+                                <li type="disc">a personal computer (for PC's: Pentium 120 MHz or higher; for Macintosh, 
+                                Power Mac 9500, Power PC 604 processor 120-MHz Base or higher), operating system and 
+                                telecommunications connections to the Internet capable of receiving, accessing, displaying, 
+                                and either printing or storing Communications received from us in electronic form via a 
+                                plain text-formatted e-mail or by access to our web site using one of the browsers specified 
+                                above</li>
+                                <br><br></ul>
+                                <li><strong>Requesting Paper Copies.</strong> We will not send you a paper copy of any 
+                                Communication unless you request it or we otherwise deem it appropriate to do so. You can 
+                                obtain a paper copy of an electronic Communication by printing it yourself or by requesting 
+                                that we mail you a paper copy, provided that such request is made within a reasonable time 
+                                after we first provided the electronic Communication to you. To request a paper copy, 
+                                contact us by telephone at the phone number on the back of your card or log in to 
+                                www.Chase.com and send a paper statement request using your Secure Inbox. We may charge you 
+                                a reasonable service charge for the delivery of paper copies of any Communication provided 
+                                to you electronically pursuant to this authorization.  We reserve the right, but assume no 
+                                obligation, to provide a paper (instead of electronic) copy of any Communication that you 
+                                have authorized us to provide electronically.</li>
+                                <br><br>
+                                <li><strong>Communications in Writing.</strong> All Communications in either electronic or 
+                                paper format from us to you will be considered "in writing." You should print or download 
+                                for your records, a copy of your Paperless Statements, this Disclosure, your initial 
+                                authorization to receive Paperless Statements and any changes to that authorization, and any 
+                                other Communication that is important to you.</li>
+                                <br><br>
+                                <li><strong>Federal Law.</strong> You acknowledge and agree that your consent to electronic 
+                                Communications is being provided in connection with a transaction affecting interstate 
+                                commerce that is subject to the federal Electronic Signatures in Global and National 
+                                Commerce Act, and that you and we both intend that the Act apply to the fullest extent 
+                                possible to validate our ability to conduct business with you by electronic means.</li>
+                                <br><br>
+                                <li><strong>Termination/Changes.</strong> We reserve the right, at our sole discretion, to 
+                                discontinue the provision of your electronic Communications, or to terminate or change the 
+                                terms and conditions on which we provide electronic Communications, including any applicable 
+                                discount for receiving Paperless Statements.  We will provide you with notice of any such 
+                                termination or change as required by law.</li>
+                                </ol>
+                                The featured words and symbols used to identify the source of goods and services may be the 
+                                trademarks of their respective owners.
+                                <br><br>
+                                <a href="#top">Top of Page</a>
+                            </div><!-- end of esigncontent -->     
+                        </div>
+                        <br><hr class="style1"><br>
+                    </div> <!-- end of section 3 e-sign disclosure -->
+                    
+                    <!-- Section 4 Pricing and Terms -->
+                    <div class="container-fluid sec4_pnt">
+                        <h6>Pricing & Terms</h6>
+                        <div class="container-fluid" id="scrolldiv">
+                            <div id="esigncontent">
+                                This Paperless Statement E-Sign Disclosure ("Disclosure") applies to each account you have 
+                                with us for which you have selected "Online Only" on the Account Selection page 
+                                ("Accounts").
+                                <br><br>
+                                The words <strong>"we," "us,"</strong> and <strong>"our"</strong> refer to the Chase entity 
+                                with whom you have your Account, and the words <strong>"you"</strong> and 
+                                <strong>"your"</strong> mean you, the individual(s) or entity identified on the Account(s) 
+                                listed on the Account Selection page.  As used in this Disclosure, 
+                                <strong>"Communication"</strong> means any Account periodic statement, or associated 
+                                authorization, agreement, disclosure, notice, or other information related to your Account's 
+                                periodic statement, including but not limited to information that we are required by law to 
+                                provide to you in writing. 
+                                <br><br>
+                                <ol TYPE="1">
+                                <li><strong>Scope of Communications to Be Provided in Electronic Form.</strong> When you 
+                                select "Online Only" with respect to an Account, you agree that we may provide you with any 
+                                Communications in electronic format, and that we may discontinue sending paper 
+                                Communications to you, unless and until you withdraw your consent as described below. Your 
+                                consent to receive electronic communications and transactions includes, but is not limited 
+                                to:</li>
+                                <br><br>
+                                <ul>
+                                <li type="disc">All legal and regulatory disclosures and communications associated with your 
+                                Account </li>
+                                <br><br>
+                                <li type="disc">Periodic disclosures or monthly billing statements for your Account(s)</li>
+                                <br><br>
+                                <li type="disc">Notices or disclosures about a change in the terms of your Account or 
+                                associated payment feature</li>
+                                <br><br>
+                                <li type="disc">Privacy policies and notices</li>
+                                <br><br>
+                                </ul>
+                                <li><strong>Method of Providing Communications to You in Electronic Form.</strong> All 
+                                Communications that we provide to you in electronic form will be provided either (1) via 
+                                e-mail, (2) by access to a website that we will designate in an e-mail notice we send to you 
+                                at the time the information is available, or (3) to the extent permissible by law, by access 
+                                to a website that we will generally designate in advance for such purpose.</li>
+                                <br><br>
+                                <li><strong>How to Withdraw Consent.</strong> You may withdraw your consent to receive 
+                                Communications in electronic form for any of your Accounts by changing your preferences on 
+                                the Account Selection page within www.Chase.com or contacting us at the phone number on the 
+                                back of your card.  At our option, we may treat your provision of an invalid e-mail address, 
+                                or the subsequent malfunction of a previously valid e-mail address, as a withdrawal of your 
+                                consent to receive electronic Communications.  We will not impose a fee to process the 
+                                withdrawal of your consent to receive electronic Communications. Any withdrawal of your 
+                                consent to receive electronic Communications will be effective only after we have a 
+                                reasonable period of time to process your withdrawal.</li>
+                                <br><br>
+                                <li><strong>How to Update Your Records.</strong> It is your responsibility to provide us 
+                                with true, accurate and complete e-mail address, contact, and other information related to 
+                                this Disclosure and your Account(s), and to maintain and update promptly any changes in this 
+                                information.  You can update information (such as your e-mail address) at our website, 
+                                www.Chase.com, or by contacting us at the phone number on the back of your card.</li>
+                                <br><br>
+                                <li><strong>Hardware and Software Requirements.</strong> In order to access, view, and 
+                                retain electronic Communications that we make available to you, you must have:</li>
+                                <br><br>
+                                <ul>
+                                <li type="disc">an Internet browser that supports 128 bit encryption;</li>
+                                <br><br>
+                                <li type="disc">sufficient electronic storage capacity on your computer's hard drive or 
+                                other data storage unit;</li>
+                                <br><br>
+                                <li type="disc">Adobe(R) Acrobat(R) Reader(R) 6.1 or higher;</li>
+                                <br><br>
+                                <li type="disc">an e-mail account with an Internet service provider and e-mail software in 
+                                order to participate in our electronic Communications programs;</li>
+                                <br><br>
+                                <li type="disc">a personal computer (for PC's: Pentium 120 MHz or higher; for Macintosh, 
+                                Power Mac 9500, Power PC 604 processor 120-MHz Base or higher), operating system and 
+                                telecommunications connections to the Internet capable of receiving, accessing, displaying, 
+                                and either printing or storing Communications received from us in electronic form via a 
+                                plain text-formatted e-mail or by access to our web site using one of the browsers specified 
+                                above</li>
+                                <br><br></ul>
+                                <li><strong>Requesting Paper Copies.</strong> We will not send you a paper copy of any 
+                                Communication unless you request it or we otherwise deem it appropriate to do so. You can 
+                                obtain a paper copy of an electronic Communication by printing it yourself or by requesting 
+                                that we mail you a paper copy, provided that such request is made within a reasonable time 
+                                after we first provided the electronic Communication to you. To request a paper copy, 
+                                contact us by telephone at the phone number on the back of your card or log in to 
+                                www.Chase.com and send a paper statement request using your Secure Inbox. We may charge you 
+                                a reasonable service charge for the delivery of paper copies of any Communication provided 
+                                to you electronically pursuant to this authorization.  We reserve the right, but assume no 
+                                obligation, to provide a paper (instead of electronic) copy of any Communication that you 
+                                have authorized us to provide electronically.</li>
+                                <br><br>
+                                <li><strong>Communications in Writing.</strong> All Communications in either electronic or 
+                                paper format from us to you will be considered "in writing." You should print or download 
+                                for your records, a copy of your Paperless Statements, this Disclosure, your initial 
+                                authorization to receive Paperless Statements and any changes to that authorization, and any 
+                                other Communication that is important to you.</li>
+                                <br><br>
+                                <li><strong>Federal Law.</strong> You acknowledge and agree that your consent to electronic 
+                                Communications is being provided in connection with a transaction affecting interstate 
+                                commerce that is subject to the federal Electronic Signatures in Global and National 
+                                Commerce Act, and that you and we both intend that the Act apply to the fullest extent 
+                                possible to validate our ability to conduct business with you by electronic means.</li>
+                                <br><br>
+                                <li><strong>Termination/Changes.</strong> We reserve the right, at our sole discretion, to 
+                                discontinue the provision of your electronic Communications, or to terminate or change the 
+                                terms and conditions on which we provide electronic Communications, including any applicable 
+                                discount for receiving Paperless Statements.  We will provide you with notice of any such 
+                                termination or change as required by law.</li>
+                                </ol>
+                                The featured words and symbols used to identify the source of goods and services may be the 
+                                trademarks of their respective owners.
+                                <br><br>
+                                <a href="#top">Top of Page</a>
+                            </div><!-- end of esigncontent -->     
+                        </div>
+                        <br><hr class="style1"><br>
+                    </div> <!-- end of section 4 pricing & terms-->
+                        
+                    <!-- Section 5 Certifications -->
+                    <div class="container-fluid sec5_cert">
+                        <h6>Certifications</h6>
+                        <div class="container-fluid subtexts">
+                            <ul>
+                                <li>I certify that I have read and agree to all pricing, terms, conditions, authorizations and 
+                                    disclosures provided with this request for credit and that all information provided is true and correct
+                                </li>
+                                <li>I understand that balance transfers, if any, will be applied to my account and sent to my designated payee 10 days after my new credit card is mailed.
+                                    If I want to cancel or modify my balance transfer within this ten-day period and have received my credit card I can call the number on the back of my card. 
+                                    Other wise, I can call (xxx)xxx-xxxx. I will continue to make payments to my other account(s) until I know the balance has been paid.
+                                </li>
+                                <li>When I give you my mobile phone number, COMPANYNAME has my permission to contact me at that number about my ___ accounts. My consent allows you to use text messaging, 
+                                    artificial or prerecorded voice messages and automatic dialing technology for informational and account service calls, but not for telemarketing or sales calls.
+                                    It may include contact from companies working on your behalf to service my account. Message and data rates may apply. I may contact you anytime to change these preferences.
+                                </li>
+                                <li>I will be responsible for repaying all balances on this account. Authorized users will have the same account number and charging privileges as the primary
+                                    cardmember but will not be financially responsible. All correspondence, including additional card, statements and notifications, will be sent to the name and address on file for the primary cardmember. 
+                                    We provide account information to the credit reporting agencies for confirming that you have a relationship with the person whose name, address, and date of birht you've told us, 
+                                    that all information is correct, and that you have their consent to add them. If we determine you've given us fraudulent name, address, or date of birth information or did not have such consent, we can close this account.
+                                </li>
+                                <li>This product is not available to either current cardmembers of this credit card, or previous cardmembers of this credit card who received a new cardmember bonus
+                                    for this credit card within the last 24 months.
+                                </li>
+                                <li><strong>I understand that the terms of my account, including the APRs, are subject to change. Any such changes will be made in accordance with the Cardmember Agreement.</strong></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="container-fluid form-check">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="checkbox" value="" required>
+                                <strong>I have read and I agree to the Certifications and Pricing & Terms <span class="checkboxspan">(required)</span>.</strong>
+                            </label>
+                        </div>
+
+                        <i class="fa fa-user-circle" id="click_advance2" aria-hidden="true"><span>Review Your Application</span></i>
+
+                        <div class="container-fluid display_advance2">
+                            <div class="row" style="padding-bottom: 1em;">
+                                <div class="col-sm-4">
+                                    <div class="card">
+                                    <div class="card-body">
+                                        <h4 class="card-title"><i class="fa fa-pencil" aria-hidden="true"></i> Personal Information</h4>
+                                        <p class="card-text">Data pulled from input of Personal Information goes here</p>
+                                        <a href="#" class="btn btn-primary" style="margin-left: 70%;">Edit</a>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="card">
+                                    <div class="card-body">
+                                        <h4 class="card-title"><i class="fa fa-pencil" aria-hidden="true"></i> Financial Information</h4>
+                                        <p class="card-text">Data pulled from input of Financial Information goes here.</p>
+                                        <a href="#" class="btn btn-primary" style="margin-left: 70%;">Edit</a>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="card">
+                                    <div class="card-body">
+                                        <h4 class="card-title"><i class="fa fa-pencil" aria-hidden="true"></i> Contact & Security</h4>
+                                        <p class="card-text">Data pulled from input of Contact & Security Information goes here.</p>
+                                        <a href="#" class="btn btn-primary" style="margin-left: 70%;">Edit</a>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div><!-- end of card-->
+                        </div>
+                    </div> <!-- end of section 5 certifications -->
+
+                        
+                        <div class="submitbtn">
+                            <div class="container-fluid">
+                                <button type="button" id="goingb" class="btn btn-secondary" onclick="history.back();">Back</button> 
+                                <button type="submit" id="submission" class="btn btn-primary" onclick="dobvalid()">Next</button>                                            
+                            </div>
+                        </div>
+                    </form>
+            </div>
+        </div>
+    </div>                    
+                
+            </div>
+        </div>
+    </div>
+
+    <footer class="footerlinks">
+        <div class="container-fluid">
+            <ul>
+                <li><a href="#">Pricing & Terms</a></li>
+                <li><a href="#">Privacy Notice</a></li>
+                <li><a href="#">Terms of Use</a></li>
+                <li><a href="#">AdChoices</a></li>
+            </ul>
+            <span>&#169; Company Name Goes here</span>
+        </div>
+    </footer>
+</header>
+
+
+
+<!-- jQuery CDN -->
+<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+<!-- Bootstrap Js CDN -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!-- jQuery Nicescroll CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.nicescroll/3.6.8-fix/jquery.nicescroll.min.js"></script>
+
+        <!-- Validating only number input -->
+        <script>
+                function validate(evt) {
+                    var theEvent = evt || window.event;
+                    var key = theEvent.keyCode || theEvent.which;
+                    key = String.fromCharCode( key );
+                    var regex = /[0-9]|\./;
+                    if( !regex.test(key) ) {
+                        theEvent.returnValue = false;
+                        if(theEvent.preventDefault) theEvent.preventDefault();
+                    }
+                }
+        </script>
+
+        <!-- validating bday (18+) -->
+        <script>
+            function dobvalid(){
+                var day = $("#dobday").val();
+                var month = $("#dobmonth").val();
+                var year = $("#dobyear").val();
+                var age = 18;
+
+                var mydate = new Date();
+                mydate.setFullYear(year, month-1, day, day-1);
+
+                var currdate = new Date();
+                currdate.setFullYear(currdate.getFullYear());
+
+                var age18yrsagodate = new Date();
+                age18yrsagodate.setFullYear(age18yrsagodate.getFullYear() - age);
+
+                var tdage = currdate - age18yrsagodate;
+                var tdinput = currdate - mydate;
+                
+                if(tdinput > tdage) {
+                    return true;
+                } else {
+                    alert ("You must be 18 years or older to apply.");
+                }
+            }
+        </script>
+
+        <!-- Setting min and maximum for DOB input -->
+        <script>
+                $(".maxmin").each(function () {
+                    var thisJ = $(this);
+                    var max = thisJ.attr("max") * 1;
+                    var min = thisJ.attr("min") * 1;
+                    var intOnly = String(thisJ.attr("intOnly")).toLowerCase() == "true";
+        
+                    var test = function (str) {
+                        return str == "" || /* (!intOnly && str == ".") || */
+                            ($.isNumeric(str) && str * 1 <= max && str * 1 >= min &&
+                            (!intOnly || str.indexOf(".") == -1) && str.match(/^0\d/) == null);
+                            // commented out code would allow entries like ".7"
+                    };
+        
+                    thisJ.keydown(function () {
+                        var str = thisJ.val();
+                        if (test(str)) thisJ.data("dwnval", str);
+                    });
+        
+                    thisJ.keyup(function () {
+                        var str = thisJ.val();
+                        if (!test(str)) thisJ.val(thisJ.data("dwnval"));
+                    })
+                });
+                </script>
+
+        <!-- Toggle + div for add auth. user-->
+        <script>
+        $('#click_advance').click(function() {
+            $('.display_advance').slideToggle('1000');
+        });
+        </script>
+
+        <!-- Toggle + div for add transfer balance-->
+        <script>
+        $('#click_advance1').click(function() {
+            $('.display_advance1').slideToggle('1000');
+        });
+        </script>
+
+        <!-- Toggle + div for add transfer balance-->
+        <script>
+        $('#click_advance2').click(function() {
+            $('.display_advance2').slideToggle('1000');
+        });
+        </script>
+
+        <!-- Hide authadd when same address is clicked -->
+        <script>
+        $('#sameadd').change(function(){
+            if(this.checked)
+                $('.authaddress_display').fadeOut('1000');
+            else  
+                $('.authaddress_display').fadeIn('1000');
+            });
+</script>
+
+
+        
+</body>
+</html>

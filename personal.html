@@ -73,14 +73,15 @@
                             <div class="container-fluid">
                                 <h2><span>Hello.</span> Tell us about yourself.</h2>
                                 <div class="container-fluid">
-                                    <form class="genpersonalinfo">
+                                    <form action="financial.html" class="genpersonalinfo">
                                         <div class="form-row">
                                             <div class="col-wide">
                                                 <label for="firstname">First name</label>
                                                 <input type="text" class="form-control is-valid" id="firstname" maxlength="15" placeholder="First Name" required>
                                             </div>
                                             <div class="col-narrow">
-                                                <label for="middlename">M.I.</label>                                    <input type="text" class="form-control is-valid" id="middlename" placeholder="M.I." maxlength="1">
+                                                <label for="middlename">M.I.</label>                                    
+                                                <input type="text" class="form-control is-valid" id="middlename" placeholder="M.I." maxlength="1">
                                             </div>
                                             <div class="col-wide">
                                                 <label for="lastname">Last Name</label>
@@ -127,7 +128,7 @@
                                             </div>
                                             <div class="col-narrow state">
                                                 <label for="inputState">State</label>
-                                                <select id="inputState" class="form-control">
+                                                <select id="inputState" class="form-control" required>
                                                     <option selected> </option>
                                                     <option value="AL">AL</option>
                                                     <option value="AK">AK</option>
@@ -189,7 +190,7 @@
                                         </div>
                                         <div class="submitbtn">
                                             <div class="container-fluid">
-                                                <button type="submit" id="submission" class="btn btn-primary">Next</button>                                            
+                                                <button type="submit" id="submission" class="btn btn-primary">Next</button>                                           
                                             </div>
                                         </div>
                                     </form>
@@ -203,7 +204,7 @@
         <div class="container-fluid">
             <ul>
                 <li><a href="#">Pricing & Terms</a></li>
-                <li><a href-"#">Privacy Notice</a></li>
+                <li><a href="#">Privacy Notice</a></li>
                 <li><a href="#">Terms of Use</a></li>
                 <li><a href="#">AdChoices</a></li>
             </ul>

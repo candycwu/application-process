@@ -68,72 +68,67 @@
                             </div>
                         </div>
                     </div>
-                    <form class="formstyle">
-                        <div class="container-fluid">
-                            <div class="form-group">
-                                <div class="optionsofres">
-                                    <label for="typeofres">Type of Residence</label>
-                                    <select id="typeofres" class="form-control">
-                                        <option value="selectone">Select One</option>
-                                        <option value="rentres">Rent</option>
-                                        <option value="ownres">Own</option>
-                                        <option value="otherres">Other</option>
-                                        </select>
-                                </div>
-                                    <div id="rentres" class="showinput restype" style="display:none">                                            
-                                        <label for "rent">Monthly housing payment</label> 
-                                        <div class="input-group">
-                                            <span class="input-group-addon">$</span>
-                                            <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)" onkeypress="validate(event)" maxlength="5">
-                                            <span class="input-group-addon">.00</span>
-                                        </div>
-                                    </div>
-                                    <div id="otherres" class="showinput restype" style="display:none">                                            
-                                        <label for "rent">Monthly housing payment</label> 
-                                        <div class="input-group">
-                                            <span class="input-group-addon">$</span>
-                                            <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)" onkeypress="validate(event)" maxlength="5">
-                                            <span class="input-group-addon">.00</span>
-                                        </div>
-                                    </div>
+                    <form action="security.html" class="formstyle container-fluid">
+                        <div class="form-group">
+                            <div class="optionsofres">
+                                <label for="typeofres">Type of Residence</label>
+                                <select id="typeofres" class="form-control" required>
+                                    <option selected> </option>
+                                    <option value="rentres">Rent</option>
+                                    <option value="ownres">Own</option>
+                                    <option value="otherres">Other</option>
+                                </select>
                             </div>
-                            <div class="form-group">
-                                <div class="gai">
-                                    <label for "gaincome">Gross Annual Income</label> 
+                                <div id="rentres" class="showinput restype" style="display:none">                                            
+                                    <label for "rent">Monthly housing payment</label> 
                                     <div class="input-group">
                                         <span class="input-group-addon">$</span>
-                                        <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)" onkeypress="validate(event)" maxlength="7">
+                                        <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)" onkeypress="validate(event)" maxlength="5" required>
                                         <span class="input-group-addon">.00</span>
                                     </div>
                                 </div>
-                                <div class="soi-e">
-                                    <label for="inputSOI">Source of Employment</label>
-                                    <select id="inputSOI" class="form-control">
-                                        <option value="SOIselectone" selected>Select One</option>
-                                        <option value="SOIemployed">Employed</option>
-                                        <option value="SOIunemployed">Unemployed</option>
-                                        <option value="SOIselfemployed">Self Employed</option>
-                                        <option value="SOIstudent">Student</option>
-                                        <option value="SOIdisabled">Disabled</option>
-                                        <option value="SOIretired">Retired</option>
-                                        <option value="SOImilitary">Military</option>
-                                        <option value="SOIother">Other</option>
-                                    </select>
-
-                                </div>  
-                                <div class="soi-e">
-                                    <label for="inputEmploymt">Employer</label> 
-                                    <input type="text" class="form-control" id="inputEmploymt" placeholder="Employer">       
-                                </div>        
+                                <div id="otherres" class="showinput restype" style="display:none">                                            
+                                    <label for "rent">Monthly housing payment</label> 
+                                    <div class="input-group">
+                                        <span class="input-group-addon">$</span>
+                                        <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)" onkeypress="validate(event)" maxlength="5" required>
+                                        <span class="input-group-addon">.00</span>
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="gai">
+                                <label for "gaincome">Gross Annual Income</label> 
+                                <div class="input-group">
+                                    <span class="input-group-addon">$</span>
+                                    <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)" onkeypress="validate(event)" maxlength="7" required>
+                                    <span class="input-group-addon">.00</span>
+                                </div>
                             </div>
+                            <div class="soi-e">
+                                <label for="inputSOI">Source of Employment</label>
+                                <select id="inputSOI" class="form-control" required>
+                                    <option selected> </option>
+                                    <option value="SOIemployed">Employed</option>
+                                    <option value="SOIunemployed">Unemployed</option>
+                                    <option value="SOIselfemployed">Self Employed</option>
+                                    <option value="SOIstudent">Student</option>
+                                    <option value="SOIdisabled">Disabled</option>
+                                    <option value="SOIretired">Retired</option>
+                                    <option value="SOImilitary">Military</option>
+                                    <option value="SOIother">Other</option>
+                                </select>
+                            </div>  
+                            <div class="soi-e">
+                                <label for="inputEmploymt">Employer</label> 
+                                <input type="text" class="form-control" id="inputEmploymt" placeholder="Employer" required>       
+                            </div>        
+                        </div>
+                        <div class="submitbtn container-fluid">
+                            <button type="button" id="goingb" class="btn btn-secondary" onclick="history.back();">Back</button> 
+                            <button type="submit" id="submission" class="btn btn-primary">Next</button>                                            
                         </div>
                     </form>
-                </div>
-                <div class="submitbtn">
-                    <div class="container-fluid">
-                        <button type="submit" id="submission" class="btn btn-secondary">Back</button> 
-                        <button type="submit" id="submission" class="btn btn-primary">Next</button>                                            
-                    </div>
                 </div>
             </div>
         </div>
@@ -143,7 +138,7 @@
         <div class="container-fluid">
             <ul>
                 <li><a href="#">Pricing & Terms</a></li>
-                <li><a href-"#">Privacy Notice</a></li>
+                <li><a href="#">Privacy Notice</a></li>
                 <li><a href="#">Terms of Use</a></li>
                 <li><a href="#">AdChoices</a></li>
             </ul>
