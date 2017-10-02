@@ -15,20 +15,19 @@
     <!-- CSS -->
     <link rel="stylesheet" href="css/personal.css">
 </head>
+
 <body>
-
-
 <header class="jumbo-wrapper">
+    <!-- Topside of Code -->
     <div class="header-container">
-            <div class="header-left-top-cornerlogo">
-                <!-- <div class="container-fluid"> -->
-                    <img src="images/logo.png">
-                <!-- </div> -->
-            </div>
-            <div class="header-top-right-corner-txt">
-                <h6><i class="fa fa-lock" aria-hidden="true"></i><span> Secure Response</span></h6>
-                <span><a href="#">We protect your information</a></span>
-            </div>
+        <div class="header-left-top-cornerlogo">
+            <img src="images/logo.png">
+        </div>
+        <div class="header-top-right-corner-txt">
+            <h6><i class="fa fa-lock" aria-hidden="true"></i><span> Secure Response</span></h6>
+            <span><a href="#">We protect your information</a></span>
+        </div>
+        <!-- Progress Bar -->
         <div class="progressbar">
             <div class="container-fluid">
                 <div class="progresstitles">
@@ -43,163 +42,166 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-        <div class="bodycardcontainer">
-            <div class="maincard">
-                <h4 class="card-header">Company Name Here<span id="clickmoreinfo"><i class="fa fa-info-circle" aria-hidden="true"></i></span></h4>
-                <!-- Leftside Card -->
-                <div class="card-body">
-                        <div class="container-fluid">
-                            <div class="leftside">
-                                <img src="http://rewardsguru.com/wp-content/uploads/2015/06/sapphire_preferred_visa.png">
-                                <p class="card-text">Unlimited 1.5% cashback on every purchase - it's automatic.</p>
-                                <p class="card-text">Redeem for cash back - any amount, anytime.</p>
-                                <p class="card-text">No annual fee.</p>
-                                <a href="#">Pricing & Terms</a>
-                            </div>
-                        </div>
-                        <div class="container-fluide hidden769">
-                            <p>Unlimited 1.5% cashback on every purchase - it's automatic.</p>
-                            <p>Redeem for cash back - any amount, anytime.</p>
-                            <p>No annual fee.</p>
-                            <br>
-                            <hr class="style1">
-                            <br>
-                            <a href="#">Pricing & Terms</a>
-                        </div>
-                    <!-- Rightside Card - Form -->
-                        <div class="rightside">
-                            <div class="container-fluid">
-                                <h2><span>Hello.</span> Tell us about yourself.</h2>
-                                <div class="container-fluid">
-                                    <form action="financial.html" class="genpersonalinfo">
-                                        <div class="form-row">
-                                            <div class="col-wide">
-                                                <label for="firstname">First name</label>
-                                                <input type="text" class="form-control is-valid" id="firstname" maxlength="15" placeholder="First Name" required>
-                                            </div>
-                                            <div class="col-narrow">
-                                                <label for="middlename">M.I.</label>                                    
-                                                <input type="text" class="form-control is-valid" id="middlename" placeholder="M.I." maxlength="1">
-                                            </div>
-                                            <div class="col-wide">
-                                                <label for="lastname">Last Name</label>
-                                                <input type="text" class="form-control is-valid" id="lastname" maxlength="15" placeholder="Last Name" required>
-                                            </div>
-                                            <div class="col-narrow">
-                                                <label for="suffix">Suffix</label>
-                                                    <select id="suffix" class="form-control">
-                                                        <option selected> </option>
-                                                        <option value="JR"> Jr. </option>
-                                                        <option value="SR"> Sr. </option>
-                                                        <option value="II"> II </option>
-                                                        <option value="III"> III </option>
-                                                        <option value="IV"> IV </option>
-                                                        <option value="V"> V </option>
-                                                        <option value="DDM"> DDM </option>
-                                                        <option value="DDS"> DDS </option>
-                                                        <option value="DO"> DO </option>
-                                                        <option value="ESQ"> ESQ </option>
-                                                        <option value="MD"> MD </option>
-                                                        <option value="RN"> RN </option>
-                                                    </select>
-                                            </div>
-                                        </div>
-                                        <div class="form-row">
-                                            <div class="col-wider mailingAdd">
-                                                <label for="inputAddress">Mailing Address</label>
-                                                <input type="text" class="form-control is-valid" id="inputAddress" placeholder="Mailing Address" required>
-                                            </div>
-                                                <i id="click_advance" class="fa fa-plus" aria-hidden="true"></i>
-                                                <div class="col-wide display_advance">
-                                                    <label for="inputAddress">Mailing Address 2</label>
-                                                    <input type="text" class="form-control is-valid" id="inputAddress2" placeholder="Mailing Address 2">
-                                                </div>
-                                                <div class="col-narrow display_advance">
-                                                    <label for="inputAddress3">Unit/Apt.</label>
-                                                    <input type="text" class="form-control is-valid" id="inputAddress3" maxlength="5" placeholder="Unit/Apt.">
-                                                </div>
-                                        </div>
-                                        <div class="form-row">
-                                            <div class="col-wider">
-                                                <label for="city">City</label>
-                                                <input type="text" class="form-control is-valid" id="city" placeholder="City" required>
-                                            </div>
-                                            <div class="col-narrow state">
-                                                <label for="inputState">State</label>
-                                                <select id="inputState" class="form-control" required>
-                                                    <option selected> </option>
-                                                    <option value="AL">AL</option>
-                                                    <option value="AK">AK</option>
-                                                    <option value="AR">AR</option>	
-                                                    <option value="AZ">AZ</option>
-                                                    <option value="CA">CA</option>
-                                                    <option value="CO">CO</option>
-                                                    <option value="CT">CT</option>
-                                                    <option value="DC">DC</option>
-                                                    <option value="DE">DE</option>
-                                                    <option value="FL">FL</option>
-                                                    <option value="GA">GA</option>
-                                                    <option value="HI">HI</option>
-                                                    <option value="IA">IA</option>	
-                                                    <option value="ID">ID</option>
-                                                    <option value="IL">IL</option>
-                                                    <option value="IN">IN</option>
-                                                    <option value="KS">KS</option>
-                                                    <option value="KY">KY</option>
-                                                    <option value="LA">LA</option>
-                                                    <option value="MA">MA</option>
-                                                    <option value="MD">MD</option>
-                                                    <option value="ME">ME</option>
-                                                    <option value="MI">MI</option>
-                                                    <option value="MN">MN</option>
-                                                    <option value="MO">MO</option>	
-                                                    <option value="MS">MS</option>
-                                                    <option value="MT">MT</option>
-                                                    <option value="NC">NC</option>	
-                                                    <option value="NE">NE</option>
-                                                    <option value="NH">NH</option>
-                                                    <option value="NJ">NJ</option>
-                                                    <option value="NM">NM</option>			
-                                                    <option value="NV">NV</option>
-                                                    <option value="NY">NY</option>
-                                                    <option value="ND">ND</option>
-                                                    <option value="OH">OH</option>
-                                                    <option value="OK">OK</option>
-                                                    <option value="OR">OR</option>
-                                                    <option value="PA">PA</option>
-                                                    <option value="RI">RI</option>
-                                                    <option value="SC">SC</option>
-                                                    <option value="SD">SD</option>
-                                                    <option value="TN">TN</option>
-                                                    <option value="TX">TX</option>
-                                                    <option value="UT">UT</option>
-                                                    <option value="VT">VT</option>
-                                                    <option value="VA">VA</option>
-                                                    <option value="WA">WA</option>
-                                                    <option value="WI">WI</option>	
-                                                    <option value="WV">WV</option>
-                                                    <option value="WY">WY</option>
-                                                </select>
-                                            </div>
-                                            <div class="col-wide zipcode">
-                                                <label for="inputZip">ZIP Code</label>
-                                                <input type="text" class="form-control is-valid" id="inputZip" onkeypress="validate(event)" placeholder="Zip Code" maxlength="5" required>
-                                            </div>
-                                        </div>
-                                        <div class="submitbtn">
-                                            <div class="container-fluid">
-                                                <button type="submit" id="submission" class="btn btn-primary">Next</button>                                           
-                                            </div>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
+        </div> <!-- End of Progress Bar -->
+    </div><!-- End of Topside of Code -->
+        
+    <div class="bodycardcontainer">
+        <div class="maincard">
+            <h4 class="card-header">Company Name Here<span id="clickmoreinfo"><i class="fa fa-info-circle" aria-hidden="true"></i></span></h4>
+            
+            <div class="card-body">
+                <!-- Leftside Card - Generic Info -->
+                <div class="container-fluid">
+                    <div class="leftside">
+                        <img src="http://rewardsguru.com/wp-content/uploads/2015/06/sapphire_preferred_visa.png">
+                        <p class="card-text">Unlimited 1.5% cashback on every purchase - it's automatic.</p>
+                        <p class="card-text">Redeem for cash back - any amount, anytime.</p>
+                        <p class="card-text">No annual fee.</p>
+                        <a href="#">Pricing & Terms</a>
+                    </div>
                 </div>
-            </div> 
+                <div class="container-fluide hidden769">
+                    <p>Unlimited 1.5% cashback on every purchase - it's automatic.</p>
+                    <p>Redeem for cash back - any amount, anytime.</p>
+                    <p>No annual fee.</p>
+                    <br>
+                    <hr class="style1">
+                    <br>
+                    <a href="#">Pricing & Terms</a>
+                </div>
+                <!-- Rightside Card - Form -->
+                <div class="rightside">
+                    <div class="container-fluid">
+                        <h2><span>Hello.</span> Tell us about yourself.</h2>
+                        <div class="container-fluid">
+                            <form action="financial.html" class="genpersonalinfo">
+                                <div class="form-row">
+                                    <div class="col-wide">
+                                        <label for="firstname">First name</label>
+                                        <input type="text" class="form-control is-valid" id="firstname" maxlength="15" placeholder="First Name" required>
+                                    </div>
+                                    <div class="col-narrow">
+                                        <label for="middlename">M.I.</label>                                    
+                                        <input type="text" class="form-control is-valid" id="middlename" placeholder="M.I." maxlength="1">
+                                    </div>
+                                    <div class="col-wide">
+                                        <label for="lastname">Last Name</label>
+                                        <input type="text" class="form-control is-valid" id="lastname" maxlength="15" placeholder="Last Name" required>
+                                    </div>
+                                    <div class="col-narrow">
+                                        <label for="suffix">Suffix</label>
+                                            <select id="suffix" class="form-control">
+                                                <option selected> </option>
+                                                <option value="JR"> Jr. </option>
+                                                <option value="SR"> Sr. </option>
+                                                <option value="II"> II </option>
+                                                <option value="III"> III </option>
+                                                <option value="IV"> IV </option>
+                                                <option value="V"> V </option>
+                                                <option value="DDM"> DDM </option>
+                                                <option value="DDS"> DDS </option>
+                                                <option value="DO"> DO </option>
+                                                <option value="ESQ"> ESQ </option>
+                                                <option value="MD"> MD </option>
+                                                <option value="RN"> RN </option>
+                                            </select>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="col-wider mailingAdd">
+                                        <label for="inputAddress">Mailing Address</label>
+                                        <input type="text" class="form-control is-valid" id="inputAddress" placeholder="Mailing Address" required>
+                                    </div>
+                                        <i id="click_advance" class="fa fa-plus" aria-hidden="true"></i>
+                                        <div class="col-wide display_advance">
+                                            <label for="inputAddress">Mailing Address 2</label>
+                                            <input type="text" class="form-control is-valid" id="inputAddress2" placeholder="Mailing Address 2">
+                                        </div>
+                                        <div class="col-narrow display_advance">
+                                            <label for="inputAddress3">Unit/Apt.</label>
+                                            <input type="text" class="form-control is-valid" id="inputAddress3" maxlength="5" placeholder="Unit/Apt.">
+                                        </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="col-wider">
+                                        <label for="city">City</label>
+                                        <input type="text" class="form-control is-valid" id="city" placeholder="City" required>
+                                    </div>
+                                    <div class="col-narrow state">
+                                        <label for="inputState">State</label>
+                                        <select id="inputState" class="form-control" required>
+                                            <option selected> </option>
+                                            <option value="AL">AL</option>
+                                            <option value="AK">AK</option>
+                                            <option value="AR">AR</option>	
+                                            <option value="AZ">AZ</option>
+                                            <option value="CA">CA</option>
+                                            <option value="CO">CO</option>
+                                            <option value="CT">CT</option>
+                                            <option value="DC">DC</option>
+                                            <option value="DE">DE</option>
+                                            <option value="FL">FL</option>
+                                            <option value="GA">GA</option>
+                                            <option value="HI">HI</option>
+                                            <option value="IA">IA</option>	
+                                            <option value="ID">ID</option>
+                                            <option value="IL">IL</option>
+                                            <option value="IN">IN</option>
+                                            <option value="KS">KS</option>
+                                            <option value="KY">KY</option>
+                                            <option value="LA">LA</option>
+                                            <option value="MA">MA</option>
+                                            <option value="MD">MD</option>
+                                            <option value="ME">ME</option>
+                                            <option value="MI">MI</option>
+                                            <option value="MN">MN</option>
+                                            <option value="MO">MO</option>	
+                                            <option value="MS">MS</option>
+                                            <option value="MT">MT</option>
+                                            <option value="NC">NC</option>	
+                                            <option value="NE">NE</option>
+                                            <option value="NH">NH</option>
+                                            <option value="NJ">NJ</option>
+                                            <option value="NM">NM</option>			
+                                            <option value="NV">NV</option>
+                                            <option value="NY">NY</option>
+                                            <option value="ND">ND</option>
+                                            <option value="OH">OH</option>
+                                            <option value="OK">OK</option>
+                                            <option value="OR">OR</option>
+                                            <option value="PA">PA</option>
+                                            <option value="RI">RI</option>
+                                            <option value="SC">SC</option>
+                                            <option value="SD">SD</option>
+                                            <option value="TN">TN</option>
+                                            <option value="TX">TX</option>
+                                            <option value="UT">UT</option>
+                                            <option value="VT">VT</option>
+                                            <option value="VA">VA</option>
+                                            <option value="WA">WA</option>
+                                            <option value="WI">WI</option>	
+                                            <option value="WV">WV</option>
+                                            <option value="WY">WY</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-wide zipcode">
+                                        <label for="inputZip">ZIP Code</label>
+                                        <input type="text" class="form-control is-valid" id="inputZip" onkeypress="validate(event)" placeholder="Zip Code" maxlength="5" required>
+                                    </div>
+                                </div>
+                                <div class="submitbtn">
+                                    <div class="container-fluid">
+                                        <button type="submit" id="submission" class="btn btn-primary">Next</button>                                           
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
         </div>
+    <!-- Footer -->
     <footer class="footerlinks">
         <div class="container-fluid">
             <ul>
@@ -210,7 +212,7 @@
             </ul>
             <span>&#169; Company Name Goes here</span>
         </div>
-    </footer>
+    </footer> <!-- End of Footer -->
 </header>
 
 
@@ -239,6 +241,10 @@
 
         <!-- Toggle + div -->
         <script>
+        if($(window).width() < 769){
+            $('.display_advance').hide();
+        }
+        
         $('#click_advance').click(function() {
             $('.display_advance').toggle('1000');
         });
@@ -246,6 +252,7 @@
 
         <!-- Toggle + div -->
         <script>
+        $('.hidden769').hide();
         $('#clickmoreinfo').click(function() {
             $('.hidden769').toggle('1000');
         });

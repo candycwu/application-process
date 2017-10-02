@@ -436,11 +436,6 @@ h4 {
         padding: 0 10%; 
     }
 
-    .sec2_transbal span {
-        font-size: 1em;
-        color: #666;
-    }
-
     .sec2_transbal_form_style {
         padding-left: 2.5em;
     }
@@ -530,6 +525,7 @@ h4 {
     .sec1_addauthuser span {
         font-size: 1em;
         color: #666;
+        padding-left: .5em;
     }
 
     .fa-plus {
@@ -583,6 +579,12 @@ h4 {
 
     .sec2_transbal_form_style {
         padding-left: 2.5em;
+    }
+
+    .sec2_transbal span {
+        font-size: 1em;
+        color: #666;
+        padding-left: .5em;
     }
 
     /*  sec3_esign */
